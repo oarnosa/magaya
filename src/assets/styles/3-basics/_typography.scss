@@ -1,22 +1,22 @@
 // Typography for all elements
 * {
-  max-width: 1920px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 37px;
-  padding: 23px;
 }
 
 h1 {
   font-size: 33px;
   line-height: 62px;
+  font-weight: 500;
   margin-bottom: 37px;
 }
 
 h2 {
   font-size: 26px;
   line-height: 51px;
+  font-weight: 500;
   margin-top: 60px;
   margin-bottom: 23px;
 }
@@ -24,6 +24,7 @@ h2 {
 h3 {
   font-size: 20px;
   line-height: 43px;
+  font-weight: 500;
   margin-top: 37px;
   margin-bottom: 14px;
 }
@@ -64,10 +65,4 @@ ul ol,
 ol ul,
 ol ol {
   margin-bottom: 0;
-}
-
-@media all and (min-width: 1994px) {
-  * {
-    padding: 37px;
-  }
 }
