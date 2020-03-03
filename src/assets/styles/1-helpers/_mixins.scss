@@ -1,1 +1,8 @@
 // Contains all mixins used in the project
+@mixin page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-primary;
+  padding: 25px 250px;
+}

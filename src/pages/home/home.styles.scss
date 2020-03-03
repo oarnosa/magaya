@@ -1,1 +1,5 @@
 @import "../../assets/styles/main";
+
+.home {
+  @include page;
+}

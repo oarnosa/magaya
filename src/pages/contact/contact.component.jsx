@@ -1,7 +1,9 @@
 import React from "react";
 
+import "./contact.styles.scss";
+
 const Contact = () => (
-  <div>
+  <div className="contact">
     <h1>Contact</h1>
   </div>
 );

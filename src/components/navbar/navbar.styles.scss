@@ -1,0 +1,23 @@
+@import "../../assets/styles/main";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 250px;
+  background-color: $color-primary;
+
+  &__options {
+    display: flex;
+    align-items: center;
+  }
+
+  &__option {
+    font-size: 14px;
+    padding-left: 25px;
+  }
+
+  &__button {
+    padding-left: 25px;
+  }
+}
