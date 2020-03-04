@@ -22,7 +22,7 @@
   }
 
   &__line {
-    width: 100%;
+    width: 1150px;
     margin: 25px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -81,7 +81,7 @@
     .stats__tiles {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      column-gap: 50px;
+      column-gap: 55px;
       padding: 25px 0;
       width: 100%;
     }
@@ -93,6 +93,13 @@
         font-size: 42px;
         font-weight: 700;
       }
+    }
+
+    .stats__cards {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 0 25px 0;
+      width: 100%;
     }
   }
 }

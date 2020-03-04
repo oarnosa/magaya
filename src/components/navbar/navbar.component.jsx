@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import { ReactComponent as Logo } from "../../assets/magaya-logo.svg";
+
 import Button from "../button/button.component";
 
 import "./navbar.styles.scss";

@@ -1,7 +1,8 @@
 import React from "react";
-
 import { ReactComponent as Ecosystem } from "../../assets/magaya-ecosystem.svg";
+
 import Button from "../../components/button/button.component";
+import Card from "../../components/card/card.component";
 
 import "./home.styles.scss";
 
@@ -15,7 +16,7 @@ const Home = () => (
           connectivity, and compliance with a single system
         </p>
         <div className="home__button">
-          <Button>Request Demo</Button>
+          <Button large>Request Demo</Button>
         </div>
       </div>
       <div className="hero__image">
@@ -26,18 +27,9 @@ const Home = () => (
     <section className="home__banner">
       <h2>Helping 1700+ companies succeed in business, including:</h2>
       <div className="banner__images">
-        <img
-          src={process.env.PUBLIC_URL + "/images/home/logo-wtdc.jpg"}
-          alt="WTDC Logo"
-        />
-        <img
-          src={process.env.PUBLIC_URL + "/images/home/logo-interport.jpg"}
-          alt="Interport Logo"
-        />
-        <img
-          src={process.env.PUBLIC_URL + "/images/home/logo-promptus.jpg"}
-          alt="Promptus Logo"
-        />
+        <img src="/images/home/logo-wtdc.jpg" alt="WTDC Logo" />
+        <img src="/images/home/logo-interport.jpg" alt="Interport Logo" />
+        <img src="/images/home/logo-promptus.jpg" alt="Promptus Logo" />
       </div>
     </section>
     <section className="home__stats">
@@ -71,6 +63,45 @@ const Home = () => (
               business without wasting any time on 3.75M phone calls and emails.
             </h4>
           </div>
+        </div>
+        <div className="stats__cards">
+          <Card
+            image="/images/home/icon-product-warehouse.jpg"
+            title="3PLs with Freight and Warehousing"
+            subtitle="Full Functionality of Magaya Supply Chain Solution: freight forwarding combined with WMS and eCommerce"
+          >
+            <li>
+              One single system for operations, accounting, visibility and
+              tracking, connectivity and compliance
+            </li>
+            <li>
+              Robust freight forwarding workflows meeting industry-specific
+              needs for domestic and cross-border logistics
+            </li>
+            <li>
+              Advanced WMS with out of the box eCommerce connections to major
+              online sales channels and couriers
+            </li>
+          </Card>
+          <Card
+            image="/images/home/icon-product-box.jpg"
+            title="Freight Forwarders, NVOCCs, Couriers"
+            subtitle="Specialized Functionality of Magaya Cargo System:  freight forwarding combined with essential warehousing capabilities"
+          >
+            <li>
+              Freight quotes and rate management, with access to export,
+              imports, consolidations, straights, LCL or FCL
+            </li>
+            <li>
+              Robust freight forwarding workflows meeting industry-specific
+              needs for domestic and cross-border logistics
+            </li>
+            <li>Automated dimensioning, weighing and photographing cargo</li>
+            <li>
+              Customs compliance, documentation, and direct integration with
+              international customs
+            </li>
+          </Card>
         </div>
       </div>
     </section>
