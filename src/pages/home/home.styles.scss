@@ -2,4 +2,97 @@
 
 .home {
   @include page;
+
+  &__hero {
+    display: flex;
+    justify-content: space-between;
+    height: 550px;
+    width: 1150px;
+
+    .hero__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 45%;
+    }
+
+    .hero__image {
+      width: 55%;
+    }
+  }
+
+  &__line {
+    width: 100%;
+    margin: 25px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  &__banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1150px;
+
+    .banner__images {
+      height: 200px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 25px 0 50px 0;
+      align-items: center;
+      opacity: 0.75;
+
+      & > :first-child {
+        height: 55px;
+        width: 155px;
+        justify-self: start;
+      }
+
+      & > :nth-child(2) {
+        height: 110px;
+        width: 170px;
+        justify-self: center;
+      }
+
+      & > :last-child {
+        height: 80px;
+        width: 230px;
+        justify-self: end;
+      }
+    }
+  }
+
+  &__stats {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: $color-primary;
+    background: $background-gradient;
+
+    .stats__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 1150px;
+      padding: 50px 0;
+    }
+
+    .stats__tiles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 50px;
+      padding: 25px 0;
+      width: 100%;
+    }
+
+    .stats__tile {
+      text-align: center;
+
+      &__value {
+        font-size: 42px;
+        font-weight: 700;
+      }
+    }
+  }
 }

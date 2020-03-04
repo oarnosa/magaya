@@ -2,10 +2,21 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 250px;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  padding: 25px 0;
   background-color: $color-primary;
+  z-index: 10;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1150px;
+  }
 
   &__options {
     display: flex;
@@ -14,6 +25,7 @@
 
   &__option {
     font-size: 14px;
+    font-weight: 500;
     padding-left: 25px;
   }
 
