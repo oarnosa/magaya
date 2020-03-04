@@ -3,6 +3,8 @@ import { ReactComponent as Ecosystem } from "../../assets/magaya-ecosystem.svg";
 
 import Button from "../../components/button/button.component";
 import Card from "../../components/card/card.component";
+import Comment from "../../components/comment/comment.component";
+import Contact from "../../components/contact/contact.component";
 
 import "./home.styles.scss";
 
@@ -67,8 +69,8 @@ const Home = () => (
         <div className="stats__cards">
           <Card
             image="/images/home/icon-product-warehouse.jpg"
-            title="3PLs with Freight and Warehousing"
-            subtitle="Full Functionality of Magaya Supply Chain Solution: freight forwarding combined with WMS and eCommerce"
+            title="Supply Chain Solution"
+            subtitle="Freight forwarding combined with WMS and eCommerce, designed for 3PLs with Freight and Warehousing"
           >
             <li>
               One single system for operations, accounting, visibility and
@@ -85,8 +87,8 @@ const Home = () => (
           </Card>
           <Card
             image="/images/home/icon-product-box.jpg"
-            title="Freight Forwarders, NVOCCs, Couriers"
-            subtitle="Specialized Functionality of Magaya Cargo System:  freight forwarding combined with essential warehousing capabilities"
+            title="Cargo System"
+            subtitle="Freight forwarding combined with essential warehousing capabilities, designed for Freight Forwarders, NVOCCs, Couriers"
           >
             <li>
               Freight quotes and rate management, with access to export,
@@ -104,6 +106,35 @@ const Home = () => (
           </Card>
         </div>
       </div>
+    </section>
+    <section className="home__reviews">
+      <h1 className="reviews__heading">Why our customers love us...</h1>
+      <hr className="reviews__line" />
+      <div className="reviews__list">
+        <Comment name="Sean Gazitúa" company="Vice President | WTDC">
+          “WTDC handles over 500,000 items. The Magaya system can handle this
+          quantity and multiple SKUs. We create a warehouse receipt, verify
+          quantities, and share crucial data with our customers, and they now
+          use the data in their stores to improve their operations.”
+        </Comment>
+        <Comment name="Scott Beal" company="COO | M2 Transport">
+          “It’s very adaptable and intuitive. A major selling point for us was
+          the high level of customization that is available. It’s not a
+          one-size-fits-all. We can expand it to meet needs as our business
+          changes.”
+        </Comment>
+        <Comment
+          name="Andres Chapa"
+          company="Operations Manager | Point Global"
+        >
+          “When we invoice our customers from the Magaya system, we include the
+          load number on the invoice. We also include the other relevant charges
+          such as drayage, distribution, cross-docking, and final transport.”
+        </Comment>
+      </div>
+    </section>
+    <section className="contact">
+      <Contact />
     </section>
   </div>
 );

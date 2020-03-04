@@ -3,11 +3,10 @@
 .card {
   display: flex;
   flex-direction: column;
-  // justify-content: space-evenly;
   align-items: center;
   height: 700px;
   width: 475px;
-  padding: 40px;
+  padding: 35px;
   color: $color-secondary;
   background-color: $color-primary;
   border-radius: 10px;
@@ -36,5 +35,12 @@
       margin: 5px 0;
       line-height: 1.5;
     }
+  }
+
+  &__more {
+    cursor: pointer;
+    color: $color-tertiary;
+    margin-top: 25px;
+    width: 100%;
   }
 }

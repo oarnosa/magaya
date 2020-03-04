@@ -8,6 +8,7 @@ const Card = ({ image, title, subtitle, children }) => (
     <h2 className="card__title">{title}</h2>
     <h4 className="card__subtitle">{subtitle}</h4>
     <ul className="card__list">{children}</ul>
+    <p className="card__more">Learn More</p>
   </div>
 );
 

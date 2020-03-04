@@ -35,11 +35,10 @@
     width: 1150px;
 
     .banner__images {
-      height: 200px;
       width: 100%;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      padding: 25px 0 50px 0;
+      padding: 50px 0 75px 0;
       align-items: center;
       opacity: 0.75;
 
@@ -100,6 +99,30 @@
       justify-content: space-around;
       padding: 50px 0 25px 0;
       width: 100%;
+    }
+  }
+
+  &__reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0 25px 0;
+    width: 1150px;
+    height: 900px;
+
+    .reviews__line {
+      border-top: 4px solid $color-tertiary;
+      margin: 0 auto 75px auto;
+      width: 125px;
+    }
+
+    .reviews__list {
+      display: flex;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      font-style: italic;
+      column-gap: 50px;
     }
   }
 }
