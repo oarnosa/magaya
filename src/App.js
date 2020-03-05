@@ -12,6 +12,7 @@ import About from "./pages/about/about.component";
 import Contact from "./pages/contact/contact.component";
 
 import Navbar from "./components/navbar/navbar.component";
+import Footer from "./components/footer/footer.component";
 
 import "./App.scss";
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/contact" component={Contact} />
         <Redirect to="/" />
       </Switch>
+      <Footer />
     </Router>
   );
 }

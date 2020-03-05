@@ -94,10 +94,6 @@ const Home = () => (
               Freight quotes and rate management, with access to export,
               imports, consolidations, straights, LCL or FCL
             </li>
-            <li>
-              Robust freight forwarding workflows meeting industry-specific
-              needs for domestic and cross-border logistics
-            </li>
             <li>Automated dimensioning, weighing and photographing cargo</li>
             <li>
               Customs compliance, documentation, and direct integration with

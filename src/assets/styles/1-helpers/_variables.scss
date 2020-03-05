@@ -7,8 +7,13 @@ $font-primary: "Montserrat", sans-serif;
 // Colors
 $color-primary: rgba(250, 250, 250, 1);
 $color-secondary: rgba(60, 60, 60, 1);
-$color-tertiary: rgba(10, 115, 195, 1);
-$background-gradient: radial-gradient(
+$color-tertiary: rgba(5, 95, 165, 1);
+$background-gradient: linear-gradient(
+  19deg,
+  rgb(28, 117, 250) 0%,
+  rgb(34, 2, 159) 100%
+);
+$background-gradient-circles: radial-gradient(
     circle at 17% 77%,
     rgba(17, 17, 17, 0.04) 0%,
     rgba(17, 17, 17, 0.04) 50%,
