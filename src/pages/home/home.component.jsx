@@ -129,9 +129,7 @@ const Home = () => (
         </Comment>
       </div>
     </section>
-    <section className="form">
-      <Form />
-    </section>
+    <Form />
   </div>
 );
 

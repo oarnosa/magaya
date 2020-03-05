@@ -14,37 +14,21 @@ const Form = () => (
         </h4>
       </div>
       <form className="form__fields">
-        <input
-          type="text"
-          placeholder="First Name"
-          className="fields__first"
-        ></input>
-        <input
-          type="text"
-          placeholder="Last Name"
-          className="fields__last"
-        ></input>
-        <input
-          type="email"
-          placeholder="Email"
-          className="fields__email"
-        ></input>
-        <input type="tel" placeholder="Phone" className="fields__phone"></input>
-        <input
-          type="text"
-          placeholder="Company"
-          className="fields__company"
-        ></input>
+        <input type="text" placeholder="First Name" className="fields__first" />
+        <input type="text" placeholder="Last Name" className="fields__last" />
+        <input type="email" placeholder="Email" className="fields__email" />
+        <input type="tel" placeholder="Phone" className="fields__phone" />
+        <input type="text" placeholder="Company" className="fields__company" />
         <input
           type="text"
           placeholder="Company Address"
           className="fields__address"
-        ></input>
+        />
         <input
           type="text"
           placeholder="Industry"
           className="fields__industry"
-        ></input>
+        />
       </form>
       <div className="form__button">
         <Button large>Submit</Button>

@@ -1,0 +1,20 @@
+@import "../../assets/styles/main";
+
+.header {
+  display: flex;
+  justify-content: center;
+  height: 125px;
+  width: 100%;
+  color: $color-primary;
+  background: $background-gradient;
+  align-items: center;
+
+  &__container {
+    text-align: center;
+    width: 1150px;
+  }
+
+  &__title {
+    margin: 0;
+  }
+}
