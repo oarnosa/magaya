@@ -19,7 +19,7 @@
     width: 950px;
     background-color: $color-primary;
     border-radius: 10px;
-    padding: 50px;
+    padding: 50px 50px 75px;
   }
 
   &__heading {
@@ -27,6 +27,20 @@
 
     .heading__title {
       margin-bottom: 15px;
+    }
+  }
+
+  &__fields {
+    height: 100%;
+    width: 65%;
+    padding: 50px 0 75px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    input {
+      height: 40px;
+      padding: 0 15px;
     }
   }
 }

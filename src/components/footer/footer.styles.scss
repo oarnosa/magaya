@@ -22,10 +22,10 @@
   }
 
   &__legal {
-    cursor: pointer;
     display: flex;
 
     .legal__link {
+      cursor: pointer;
       margin-left: 25px;
     }
   }

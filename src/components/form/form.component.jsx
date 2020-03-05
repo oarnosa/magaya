@@ -1,6 +1,6 @@
 import React from "react";
 
-// import Button from "../button/button.component";
+import Button from "../button/button.component";
 
 import "./form.styles.scss";
 
@@ -13,10 +13,42 @@ const Form = () => (
           A representative will be in contact with you shortly
         </h4>
       </div>
-      <div className="form__fields"></div>
-      {/* <div className="form__button">
+      <form className="form__fields">
+        <input
+          type="text"
+          placeholder="First Name"
+          className="fields__first"
+        ></input>
+        <input
+          type="text"
+          placeholder="Last Name"
+          className="fields__last"
+        ></input>
+        <input
+          type="email"
+          placeholder="Email"
+          className="fields__email"
+        ></input>
+        <input type="tel" placeholder="Phone" className="fields__phone"></input>
+        <input
+          type="text"
+          placeholder="Company"
+          className="fields__company"
+        ></input>
+        <input
+          type="text"
+          placeholder="Company Address"
+          className="fields__address"
+        ></input>
+        <input
+          type="text"
+          placeholder="Industry"
+          className="fields__industry"
+        ></input>
+      </form>
+      <div className="form__button">
         <Button large>Submit</Button>
-      </div> */}
+      </div>
     </div>
   </div>
 );
