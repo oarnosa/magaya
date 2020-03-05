@@ -9,7 +9,7 @@ import "./navbar.styles.scss";
 const Navbar = () => (
   <div className="navbar">
     <div className="navbar__container">
-      <Link to="/" className="navbar__brand">
+      <Link to="/" className="navbar__brand" aria-label="Navbar Brand">
         <Logo />
       </Link>
       <div className="navbar__options">

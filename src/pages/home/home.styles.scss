@@ -38,25 +38,25 @@
       width: 100%;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      padding: 50px 0 75px 0;
+      padding: 20px 0 75px 0;
       align-items: center;
       opacity: 0.75;
 
       & > :first-child {
-        height: 55px;
-        width: 155px;
+        height: 60px;
+        width: 145px;
         justify-self: start;
       }
 
       & > :nth-child(2) {
         height: 110px;
-        width: 170px;
+        width: 181.5px;
         justify-self: center;
       }
 
       & > :last-child {
-        height: 80px;
-        width: 230px;
+        height: 75px;
+        width: 243px;
         justify-self: end;
       }
     }

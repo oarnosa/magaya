@@ -4,7 +4,7 @@ import { ReactComponent as Ecosystem } from "../../assets/magaya-ecosystem.svg";
 import Button from "../../components/button/button.component";
 import Card from "../../components/card/card.component";
 import Comment from "../../components/comment/comment.component";
-import Contact from "../../components/contact/contact.component";
+import Form from "../../components/form/form.component";
 
 import "./home.styles.scss";
 
@@ -68,7 +68,7 @@ const Home = () => (
         </div>
         <div className="stats__cards">
           <Card
-            image="/images/home/icon-product-warehouse.jpg"
+            image="/images/home/icon-product-warehouse.png"
             title="Supply Chain Solution"
             subtitle="Freight forwarding combined with WMS and eCommerce, designed for 3PLs with Freight and Warehousing"
           >
@@ -86,7 +86,7 @@ const Home = () => (
             </li>
           </Card>
           <Card
-            image="/images/home/icon-product-box.jpg"
+            image="/images/home/icon-product-box.png"
             title="Cargo System"
             subtitle="Freight forwarding combined with essential warehousing capabilities, designed for Freight Forwarders, NVOCCs, Couriers"
           >
@@ -133,8 +133,8 @@ const Home = () => (
         </Comment>
       </div>
     </section>
-    <section className="contact">
-      <Contact />
+    <section className="form">
+      <Form />
     </section>
   </div>
 );

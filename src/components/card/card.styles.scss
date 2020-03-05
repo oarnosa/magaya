@@ -6,7 +6,7 @@
   align-items: center;
   height: 700px;
   width: 475px;
-  padding: 35px;
+  padding: 30px;
   color: $color-secondary;
   background-color: $color-primary;
   border-radius: 10px;
@@ -16,13 +16,14 @@
   &__title {
     color: $color-tertiary;
     text-align: center;
-    line-height: 1.5;
-    margin: 20px 0 25px 0;
+    line-height: 1.8;
+    margin: 10px 0 20px 0;
   }
 
   &__subtitle {
     margin: 0 0 15px 0;
-    line-height: 1.5;
+    font-size: 15px;
+    line-height: 1.8;
   }
 
   &__list {
@@ -33,7 +34,8 @@
 
     li {
       margin: 5px 0;
-      line-height: 1.5;
+      font-size: 15px;
+      line-height: 1.8;
     }
   }
 
