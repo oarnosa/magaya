@@ -6,6 +6,8 @@ import {
   Redirect
 } from "react-router-dom";
 
+import ScrollToTop from "./components/scroll-to-top/scroll-to-top.wrapper";
+
 import Home from "./pages/home/home.component";
 import Solutions from "./pages/solutions/solutions.component";
 import About from "./pages/about/about.component";
@@ -19,15 +21,17 @@ import "./App.scss";
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/solutions" component={Solutions} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Redirect to="/" />
-      </Switch>
-      <Footer />
+      <ScrollToTop>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/solutions" component={Solutions} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Redirect to="/" />
+        </Switch>
+        <Footer />
+      </ScrollToTop>
     </Router>
   );
 }

@@ -48,4 +48,17 @@
     margin-top: 25px;
     width: 100%;
   }
+
+  &--small {
+    height: 650px;
+    width: 350px;
+
+    .card__title {
+      color: $color-tertiary;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 15px 0 20px 0;
+    }
+  }
 }

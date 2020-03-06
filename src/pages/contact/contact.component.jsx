@@ -1,12 +1,10 @@
 import React from "react";
 
-import Header from "../../components/header/header.component";
-
 import "./contact.styles.scss";
 
 const Contact = () => (
   <div className="contact">
-    <Header>Contact</Header>
+    <h1>Contact</h1>
   </div>
 );
 
