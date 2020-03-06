@@ -6,6 +6,9 @@ import {
   Redirect
 } from "react-router-dom";
 
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faComments, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+
 import ScrollToTop from "./components/scroll-to-top/scroll-to-top.wrapper";
 
 import Home from "./pages/home/home.component";
@@ -17,6 +20,8 @@ import Navbar from "./components/navbar/navbar.component";
 import Footer from "./components/footer/footer.component";
 
 import "./App.scss";
+
+library.add(faComments, faPhoneAlt);
 
 function App() {
   return (

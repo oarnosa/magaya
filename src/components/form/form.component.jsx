@@ -8,7 +8,7 @@ const Form = () => (
   <div className="form">
     <div className="form__container">
       <div className="form__heading">
-        <h1 className="heading__title">Request Demo</h1>
+        <h2 className="heading__title">Request Demo</h2>
         <p className="heading__subtitle">
           A representative will be in contact with you shortly
         </p>

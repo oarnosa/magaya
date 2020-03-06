@@ -73,6 +73,7 @@ const Home = () => (
             image="/images/home/icon-product-warehouse.png"
             title="Supply Chain Solution"
             subtitle="Freight forwarding combined with WMS and eCommerce, designed for 3PLs with Freight and Warehousing"
+            link
           >
             <li>
               One single system for operations, accounting, visibility and
@@ -91,6 +92,7 @@ const Home = () => (
             image="/images/home/icon-product-box.png"
             title="Cargo System"
             subtitle="Freight forwarding combined with essential warehousing capabilities, designed for Freight Forwarders, NVOCCs, Couriers"
+            link
           >
             <li>
               Freight quotes and rate management, with access to export,
