@@ -27,7 +27,9 @@ const Home = () => (
     </section>
     <hr className="home__line" />
     <section className="home__banner">
-      <h2>Helping 1700+ companies succeed in business, including:</h2>
+      <h2 className="banner__heading">
+        Trusted by 1700+ leading Freight Forwarders, NVOCCs, 3PLs, and Couriers
+      </h2>
       <div className="banner__images">
         <img src="/images/home/logo-wtdc.jpg" alt="WTDC Logo" />
         <img src="/images/home/logo-interport.jpg" alt="Interport Logo" />
@@ -71,7 +73,6 @@ const Home = () => (
             image="/images/home/icon-product-warehouse.png"
             title="Supply Chain Solution"
             subtitle="Freight forwarding combined with WMS and eCommerce, designed for 3PLs with Freight and Warehousing"
-            link
           >
             <li>
               One single system for operations, accounting, visibility and
@@ -90,7 +91,6 @@ const Home = () => (
             image="/images/home/icon-product-box.png"
             title="Cargo System"
             subtitle="Freight forwarding combined with essential warehousing capabilities, designed for Freight Forwarders, NVOCCs, Couriers"
-            link
           >
             <li>
               Freight quotes and rate management, with access to export,

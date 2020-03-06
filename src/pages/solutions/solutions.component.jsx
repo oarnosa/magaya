@@ -1,6 +1,7 @@
 import React from "react";
 
 import Card from "../../components/card/card.component";
+import Quote from "../../components/quote/quote.component";
 import Form from "../../components/form/form.component";
 
 import "./solutions.styles.scss";
@@ -9,7 +10,7 @@ const Solutions = () => (
   <div className="solutions">
     <section className="solutions__hero">
       <h2 className="hero__title">
-        End-to-End Supply Chain Management Platform
+        Your Global Leader In Logistics And Supply Chain Automation
       </h2>
       <p className="hero__content">
         A single platform for operations, accounting, visibility and tacking,
@@ -220,20 +221,29 @@ const Solutions = () => (
         </div>
       </div>
     </section>
-    <section className="solutions__quote">
-      <div className="quote__image">
-        <img src="/images/solutions/quotes.png" alt="Quotes" />
-      </div>
-      <div className="quote__content">
-        <p className="quote__comment">
-          We can give our customers visibility and inventory control and show
-          them the documents they need to see for their business. With the
-          online tracking, we can offer our customers one-stop shopping. They
-          can see what’s been received, what’s in transit, what’s delivered.
-        </p>
-        <h4 className="quote__author">Patrick Oliva</h4>
-        <p className="quote__company">Owner, Simple Freight Solutions</p>
-      </div>
+    <section className="solutions__quotes">
+      <Quote
+        image="/images/solutions/quotes.png"
+        author="Patrick Oliva"
+        company="Owner, Simple Freight Solutions"
+      >
+        We can give our customers visibility and inventory control and show them
+        the documents they need to see for their business. With the online
+        tracking, we can offer our customers one-stop shopping. They can see
+        what’s been received, what’s in transit, what’s delivered.
+      </Quote>
+      <hr className="quotes__line" />
+      <Quote
+        image="/images/solutions/quotes.png"
+        author="Scott Beal"
+        company="Chief Operating Officer, M2 Transport"
+        flip
+      >
+        “It’s very adaptable and intuitive. A major selling point for us was the
+        high level of customization that is available. It’s not a
+        one-size-fits-all. We can expand it to meet needs as our business
+        changes.”
+      </Quote>
     </section>
     <Form />
   </div>

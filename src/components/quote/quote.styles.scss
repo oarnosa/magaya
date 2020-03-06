@@ -1,0 +1,32 @@
+@import "../../assets/styles/main";
+
+.quote {
+  display: flex;
+  width: 100%;
+
+  &__image {
+    height: 310px;
+    opacity: 0.65;
+    order: 1;
+  }
+
+  &__content {
+    max-width: 850px;
+    padding: 25px;
+    order: 2;
+  }
+
+  &--flip {
+    justify-content: flex-end;
+    text-align: end;
+
+    .quote__image {
+      order: 2;
+      transform: scaleX(-1);
+    }
+
+    .quote__content {
+      order: 1;
+    }
+  }
+}
