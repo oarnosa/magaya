@@ -25,18 +25,25 @@
   &__heading {
     text-align: center;
 
-    .heading__title {
-      margin-bottom: 15px;
+    .heading__title,
+    .heading__subtitle {
+      margin-bottom: 5px;
     }
   }
 
   &__fields {
     height: 100%;
     width: 65%;
-    padding: 50px 0 75px 0;
     display: flex;
+    padding: 10px 0 50px 0;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
+    label {
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 15px;
+    }
 
     input {
       height: 40px;

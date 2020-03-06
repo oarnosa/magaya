@@ -223,7 +223,7 @@ const Solutions = () => (
     </section>
     <section className="solutions__quotes">
       <Quote
-        image="/images/solutions/quotes.png"
+        image="/images/solutions/img-quotes.png"
         author="Patrick Oliva"
         company="Owner, Simple Freight Solutions"
       >
@@ -234,7 +234,7 @@ const Solutions = () => (
       </Quote>
       <hr className="quotes__line" />
       <Quote
-        image="/images/solutions/quotes.png"
+        image="/images/solutions/img-quotes.png"
         author="Scott Beal"
         company="Chief Operating Officer, M2 Transport"
         flip
