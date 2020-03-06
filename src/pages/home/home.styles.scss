@@ -49,18 +49,21 @@
       opacity: 0.75;
 
       & > :first-child {
+        cursor: pointer;
         height: 60px;
         width: 145px;
         justify-self: start;
       }
 
       & > :nth-child(2) {
+        cursor: pointer;
         height: 110px;
         width: 181.5px;
         justify-self: center;
       }
 
       & > :last-child {
+        cursor: pointer;
         height: 75px;
         width: 243px;
         justify-self: end;

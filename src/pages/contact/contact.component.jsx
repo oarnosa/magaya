@@ -42,7 +42,11 @@ const Contact = () => (
           Sometimes you need a little help from your friends. Or a Magaya
           support rep. Don't worry... we are here for you
         </p>
-        <Button>Contact Support</Button>
+        <Button
+          onClick={() => (window.location.href = "mailto:support@magaya.com")}
+        >
+          Contact Support
+        </Button>
       </div>
     </section>
     <Form />

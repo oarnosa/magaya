@@ -5,7 +5,7 @@ import Button from "../button/button.component";
 import "./form.styles.scss";
 
 const Form = () => (
-  <div className="form">
+  <div className="form" id="form">
     <div className="form__container">
       <div className="form__heading">
         <h2 className="heading__title">Request Demo</h2>

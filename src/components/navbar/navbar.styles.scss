@@ -26,6 +26,11 @@
     font-size: 14px;
     font-weight: 500;
     padding-left: 25px;
+    transition: ease-in-out 0.25s;
+
+    &:hover {
+      color: $color-tertiary;
+    }
   }
 
   &__button {

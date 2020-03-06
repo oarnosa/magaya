@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 import { ReactComponent as Ecosystem } from "../../assets/magaya-ecosystem.svg";
 
 import Button from "../../components/button/button.component";
@@ -18,7 +19,9 @@ const Home = () => (
           connectivity, and compliance with a single system
         </p>
         <div className="home__button">
-          <Button large>Request Demo</Button>
+          <ScrollLink to="form" spy={true} smooth={true} duration={500}>
+            <Button large>Request Demo</Button>
+          </ScrollLink>
         </div>
       </div>
       <div className="hero__image">
@@ -31,9 +34,21 @@ const Home = () => (
         Trusted by 1700+ leading Freight Forwarders, NVOCCs, 3PLs, and Couriers
       </h2>
       <div className="banner__images">
-        <img src="/images/home/logo-wtdc.jpg" alt="WTDC Logo" />
-        <img src="/images/home/logo-interport.jpg" alt="Interport Logo" />
-        <img src="/images/home/logo-promptus.jpg" alt="Promptus Logo" />
+        <img
+          src="/images/home/logo-wtdc.jpg"
+          alt="WTDC Logo"
+          onClick={() => window.open("https://www.wtdc.com/")}
+        />
+        <img
+          src="/images/home/logo-interport.jpg"
+          alt="Interport Logo"
+          onClick={() => window.open("https://www.interport.us/")}
+        />
+        <img
+          src="/images/home/logo-promptus.jpg"
+          alt="Promptus Logo"
+          onClick={() => window.open("https://www.promptus.us/")}
+        />
       </div>
     </section>
     <section className="home__stats">
@@ -73,7 +88,7 @@ const Home = () => (
             image="/images/home/icon-product-warehouse.png"
             title="Supply Chain Solution"
             subtitle="Freight forwarding combined with WMS and eCommerce, designed for 3PLs with Freight and Warehousing"
-            link
+            link="/solutions"
           >
             <li>
               One single system for operations, accounting, visibility and
@@ -92,7 +107,7 @@ const Home = () => (
             image="/images/home/icon-product-box.png"
             title="Cargo System"
             subtitle="Freight forwarding combined with essential warehousing capabilities, designed for Freight Forwarders, NVOCCs, Couriers"
-            link
+            link="/solutions"
           >
             <li>
               Freight quotes and rate management, with access to export,
