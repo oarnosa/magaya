@@ -2,4 +2,65 @@
 
 .solutions {
   @include page;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: 1150px;
+  }
+
+  &__hero {
+    text-align: center;
+    padding: 50px;
+
+    .hero__content {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__compare {
+    display: flex;
+    justify-content: center;
+
+    .compare__table {
+      padding: 0 0 100px;
+
+      tr > th {
+        padding: 25px;
+        text-align: center;
+        font-weight: 500;
+      }
+
+      tr > th:nth-child(3) {
+        font-weight: 700;
+        border-right: 1px solid rgba($color-secondary, $alpha: 0.35);
+        border-left: 1px solid rgba($color-secondary, $alpha: 0.35);
+      }
+
+      tr > td {
+        padding: 12.5px;
+      }
+
+      tr > td:nth-child(3) {
+        border-right: 1px solid rgba($color-secondary, $alpha: 0.35);
+        border-left: 1px solid rgba($color-secondary, $alpha: 0.35);
+      }
+
+      tr:nth-child(2n) {
+        background-color: rgba(245, 245, 245, 1);
+      }
+
+      tr > td:nth-child(1) {
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      tr > td:nth-child(2),
+      tr > td:nth-child(3) {
+        color: $color-tertiary;
+        text-align: center;
+        font-size: 20px;
+      }
+    }
+  }
 }
