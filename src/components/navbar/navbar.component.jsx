@@ -15,13 +15,6 @@ const Navbar = () => (
       </Link>
       <div className="navbar__options">
         <NavLink
-          to="/home"
-          className="navbar__option"
-          activeStyle={{ color: "rgba(10, 95, 200, 1)" }}
-        >
-          Home
-        </NavLink>
-        <NavLink
           to="/solutions"
           className="navbar__option"
           activeStyle={{ color: "rgba(10, 95, 200, 1)" }}
