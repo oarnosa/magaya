@@ -10,7 +10,7 @@ import "./navbar.styles.scss";
 const Navbar = () => (
   <div className="navbar">
     <div className="navbar__container">
-      <Link to="/home">
+      <Link to="/home" aria-label="Brand Logo">
         <Logo />
       </Link>
       <div className="navbar__options">
@@ -18,6 +18,7 @@ const Navbar = () => (
           to="/solutions"
           className="navbar__option"
           activeStyle={{ color: "rgba(10, 95, 200, 1)" }}
+          aria-label="Solutions Page"
         >
           Solutions
         </NavLink>
@@ -25,6 +26,7 @@ const Navbar = () => (
           to="/about"
           className="navbar__option"
           activeStyle={{ color: "rgba(10, 95, 200, 1)" }}
+          aria-label="About Page"
         >
           About Us
         </NavLink>
@@ -32,11 +34,18 @@ const Navbar = () => (
           to="/contact"
           className="navbar__option"
           activeStyle={{ color: "rgba(10, 95, 200, 1)" }}
+          aria-label="Contact Page"
         >
           Contact
         </NavLink>
         <div className="navbar__button">
-          <ScrollLink to="form" spy={true} smooth={true} duration={500}>
+          <ScrollLink
+            to="form"
+            spy={true}
+            smooth={true}
+            duration={500}
+            aria-label="Request Demo"
+          >
             <Button>Request Demo</Button>
           </ScrollLink>
         </div>

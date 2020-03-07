@@ -10,8 +10,8 @@ const Card = ({ image, title, subtitle, link, small, children }) => (
     <h4 className="card__subtitle">{subtitle}</h4>
     <ul className="card__list">{children}</ul>
     {link && (
-      <Link to={link}>
-        <p className="card__more">Learn More</p>
+      <Link to={link} aria-label="View Solution">
+        <p className="card__more">View Solution</p>
       </Link>
     )}
   </div>

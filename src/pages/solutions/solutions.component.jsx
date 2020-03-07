@@ -23,52 +23,56 @@ const Solutions = () => (
       </p>
     </section>
     <section className="solutions__compare">
-      <table className="compare__table" cellspacing="0">
-        <tr>
-          <th></th>
-          <th>Magaya Cargo System</th>
-          <th>Magaya Supply Chain Solution</th>
-        </tr>
-        <tr>
-          <td>Shipping and Freight Forwarding</td>
-          <td>&#10003;</td>
-          <td>&#10003;</td>
-        </tr>
-        <tr>
-          <td>Essential Warehouse Management</td>
-          <td>&#10003;</td>
-          <td>&#10003;</td>
-        </tr>
-        <tr>
-          <td>Pickups. Releases, Last Mile Delivery</td>
-          <td>&#10003;</td>
-          <td>&#10003;</td>
-        </tr>
-        <tr>
-          <td>Customer Service, Visibility, Tracking</td>
-          <td>&#10003;</td>
-          <td>&#10003;</td>
-        </tr>
-        <tr>
-          <td>Productivity, Documentation, Extensions</td>
-          <td>&#10003;</td>
-          <td>&#10003;</td>
-        </tr>
-        <tr>
-          <td>Accounting</td>
-          <td>&#10003;</td>
-          <td>&#10003;</td>
-        </tr>
-        <tr>
-          <td>Advanced Warehouse Management</td>
-          <td></td>
-          <td>&#10003;</td>
-        </tr>
-        <tr>
-          <td>Ecommerce Fulfillment</td>
-          <td></td>
-          <td>&#10003;</td>
-        </tr>
+      <table className="compare__table" cellSpacing="0">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Magaya Cargo System</th>
+            <th>Magaya Supply Chain Solution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Shipping and Freight Forwarding</td>
+            <td>&#10003;</td>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <td>Essential Warehouse Management</td>
+            <td>&#10003;</td>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <td>Pickups. Releases, Last Mile Delivery</td>
+            <td>&#10003;</td>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <td>Customer Service, Visibility, Tracking</td>
+            <td>&#10003;</td>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <td>Productivity, Documentation, Extensions</td>
+            <td>&#10003;</td>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <td>Accounting</td>
+            <td>&#10003;</td>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <td>Advanced Warehouse Management</td>
+            <td></td>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <td>Ecommerce Fulfillment</td>
+            <td></td>
+            <td>&#10003;</td>
+          </tr>
+        </tbody>
       </table>
     </section>
     <section className="solutions__features">

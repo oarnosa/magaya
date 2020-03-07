@@ -14,6 +14,8 @@ const Contact = () => (
         Our philosophy is to help companies succeed by offering them a complete
         and flexible package designed to grow with them. The growth of our
         customers is our growth, so we dedicate ourselves to help them succeed.
+        We are pleased to serve over 1,700 companies around the world in 80
+        different countries.
       </p>
     </section>
     <section className="contact__detail">

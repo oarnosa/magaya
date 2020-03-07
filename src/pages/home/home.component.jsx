@@ -19,7 +19,13 @@ const Home = () => (
           connectivity, and compliance with a single system
         </p>
         <div className="home__button">
-          <ScrollLink to="form" spy={true} smooth={true} duration={500}>
+          <ScrollLink
+            to="form"
+            spy={true}
+            smooth={true}
+            duration={500}
+            aria-label="Request Demo"
+          >
             <Button large>Request Demo</Button>
           </ScrollLink>
         </div>
