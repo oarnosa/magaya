@@ -26,7 +26,7 @@
   &__option {
     font-size: 14px;
     font-weight: 500;
-    padding-left: 40px;
+    margin-left: 40px;
     transition: ease-in-out 0.25s;
 
     &:hover {
@@ -35,6 +35,6 @@
   }
 
   &__button {
-    padding-left: 40px;
+    margin-left: 40px;
   }
 }
