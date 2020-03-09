@@ -14,7 +14,7 @@ import Spinner from "./components/spinner/spinner.component";
 import Navbar from "./components/navbar/navbar.component";
 import Footer from "./components/footer/footer.component";
 
-import "./App.scss";
+import "./assets/styles/main.scss";
 
 const Home = lazy(() => import("./pages/home/home.component"));
 const Solutions = lazy(() => import("./pages/solutions/solutions.component"));
