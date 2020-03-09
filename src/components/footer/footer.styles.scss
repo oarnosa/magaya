@@ -30,3 +30,11 @@
     }
   }
 }
+
+@media screen and (max-width: $breakpoint-desktop) {
+  .footer {
+    &__container {
+      width: 850px;
+    }
+  }
+}

@@ -38,3 +38,11 @@
     margin-left: 40px;
   }
 }
+
+@media screen and (max-width: $breakpoint-desktop) {
+  .navbar {
+    &__container {
+      width: 850px;
+    }
+  }
+}

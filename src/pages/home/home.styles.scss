@@ -136,3 +136,41 @@
     }
   }
 }
+
+@media screen and (max-width: $breakpoint-desktop) {
+  .home {
+    &__hero {
+      width: 850px;
+
+      .hero__content {
+        width: 42.5%;
+      }
+
+      .hero__image {
+        width: 57.5%;
+      }
+    }
+
+    &__banner {
+      width: 850px;
+    }
+
+    &__stats {
+      .stats__container {
+        width: 850px;
+      }
+
+      .stats__tiles {
+        column-gap: 35px;
+      }
+    }
+
+    &__reviews {
+      width: 850px;
+
+      .reviews__list {
+        column-gap: 30px;
+      }
+    }
+  }
+}
