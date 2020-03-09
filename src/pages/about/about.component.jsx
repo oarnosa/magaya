@@ -26,7 +26,7 @@ const About = () => (
       <div className="founders__tiles">
         <div className="founder__content">
           <img
-            src="/images/about/exec-headshot-jesus.png"
+            src="/images/about/exec-headshot-jesus.webp"
             alt="Jesus Headshot"
           />
           <h3>Jesus David Rodriguez</h3>
@@ -51,7 +51,7 @@ const About = () => (
         </div>
         <div className="founder__content">
           <img
-            src="/images/about/exec-headshot-yoni.png"
+            src="/images/about/exec-headshot-yoni.webp"
             alt="Jesus Headshot"
           />
           <h3>Jose Yoniel “Yoni” Garcia</h3>
@@ -76,7 +76,7 @@ const About = () => (
         </div>
         <div className="founder__content">
           <img
-            src="/images/about/exec-headshot-gabriel.png"
+            src="/images/about/exec-headshot-gabriel.webp"
             alt="Jesus Headshot"
           />
           <h3>Gabriel T. Ruz Jr.</h3>

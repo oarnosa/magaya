@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -10,16 +10,16 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faComments, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 
 import ScrollToTop from "./components/scroll-to-top/scroll-to-top.wrapper";
-
-import Home from "./pages/home/home.component";
-import Solutions from "./pages/solutions/solutions.component";
-import About from "./pages/about/about.component";
-import Contact from "./pages/contact/contact.component";
-
+import Spinner from "./components/spinner/spinner.component";
 import Navbar from "./components/navbar/navbar.component";
 import Footer from "./components/footer/footer.component";
 
 import "./App.scss";
+
+const Home = lazy(() => import("./pages/home/home.component"));
+const Solutions = lazy(() => import("./pages/solutions/solutions.component"));
+const About = lazy(() => import("./pages/about/about.component"));
+const Contact = lazy(() => import("./pages/contact/contact.component"));
 
 library.add(faComments, faPhoneAlt);
 
@@ -29,11 +29,13 @@ function App() {
       <ScrollToTop>
         <Navbar />
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/solutions" component={Solutions} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Redirect to="/" />
+          <Suspense fallback={<Spinner />}>
+            <Route exact path="/" component={Home} />
+            <Route path="/solutions" component={Solutions} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+            <Redirect to="/" />
+          </Suspense>
         </Switch>
         <Footer />
       </ScrollToTop>
