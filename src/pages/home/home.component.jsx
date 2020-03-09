@@ -95,7 +95,7 @@ const Home = () => (
             </div>
           </div>
         </Fade>
-        <Fade>
+        <Fade bottom>
           <div className="stats__cards">
             <Card
               image="/images/home/icon-product-warehouse.webp"

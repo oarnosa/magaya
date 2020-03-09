@@ -7,7 +7,7 @@ import "./form.styles.scss";
 
 const Form = () => (
   <div className="form" id="form">
-    <Fade>
+    <Fade bottom>
       <div className="form__container">
         <div className="form__heading">
           <h2 className="heading__title">Request Demo</h2>

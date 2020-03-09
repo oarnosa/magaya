@@ -91,7 +91,7 @@ const Solutions = () => (
           </h3>
         </Fade>
         <div className="features__cards">
-          <Fade>
+          <Fade bottom>
             <Card
               image="/images/solutions/product-icn-livetrack.webp"
               title="Visibility & Tracking"
@@ -141,7 +141,7 @@ const Solutions = () => (
               <li>No high upfront cost of traditional dimensioning tools</li>
             </Card>
           </Fade>
-          <Fade>
+          <Fade bottom>
             <Card
               image="/images/solutions/product-icn-carrier-connections.webp"
               title="Carrier Connections"
@@ -188,7 +188,7 @@ const Solutions = () => (
               </li>
             </Card>
           </Fade>
-          <Fade>
+          <Fade bottom>
             <Card
               image="/images/solutions/product-icn-logistico.webp"
               title="Customs and Compliance"
