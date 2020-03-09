@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import Reveal from "react-reveal";
 
 import Button from "../button/button.component";
 
@@ -7,7 +7,7 @@ import "./form.styles.scss";
 
 const Form = () => (
   <div className="form" id="form">
-    <Fade bottom>
+    <Reveal effect="fadeIn">
       <div className="form__container">
         <div className="form__heading">
           <h2 className="heading__title">Request Demo</h2>
@@ -35,7 +35,7 @@ const Form = () => (
           <Button large>Submit</Button>
         </div>
       </div>
-    </Fade>
+    </Reveal>
   </div>
 );
 

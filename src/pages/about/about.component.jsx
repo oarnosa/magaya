@@ -1,6 +1,6 @@
 import React from "react";
 import YouTube from "react-youtube";
-import { Fade } from "react-reveal";
+import Reveal from "react-reveal";
 
 import Form from "../../components/form/form.component";
 
@@ -9,7 +9,7 @@ import "./about.styles.scss";
 const About = () => (
   <div className="about">
     <section className="about__hero">
-      <Fade>
+      <Reveal effect="fadeIn">
         <h2 className="hero__title">Who We Are</h2>
         <p className="hero__content">
           At Magaya we are proud to develop software that automates and improves
@@ -22,13 +22,13 @@ const About = () => (
         <div className="hero__video__container">
           <YouTube className="hero__video" videoId="LQ2SGPK8Mjw" />
         </div>
-      </Fade>
+      </Reveal>
     </section>
     <section className="about__founders">
-      <Fade>
+      <Reveal effect="fadeIn">
         <h2 className="founders__heading">Our Founders</h2>
-      </Fade>
-      <Fade>
+      </Reveal>
+      <Reveal effect="fadeIn">
         <div className="founders__tiles">
           <div className="founder__content">
             <img
@@ -104,7 +104,7 @@ const About = () => (
             </p>
           </div>
         </div>
-      </Fade>
+      </Reveal>
     </section>
     <Form />
   </div>

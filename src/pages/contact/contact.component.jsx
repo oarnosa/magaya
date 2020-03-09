@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import Reveal from "react-reveal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Button from "../../components/button/button.component";
@@ -10,7 +10,7 @@ import "./contact.styles.scss";
 const Contact = () => (
   <div className="contact">
     <section className="contact__hero">
-      <Fade>
+      <Reveal effect="fadeIn">
         <h2 className="hero__title">Get In Touch With Us</h2>
         <p className="hero__content">
           Our philosophy is to help companies succeed by offering them a
@@ -19,10 +19,10 @@ const Contact = () => (
           succeed. We are pleased to serve over 1,700 companies around the world
           in 80 different countries.
         </p>
-      </Fade>
+      </Reveal>
     </section>
     <section className="contact__detail">
-      <Fade>
+      <Reveal effect="fadeIn">
         <div className="detail__sales">
           <FontAwesomeIcon
             className="detail__icon"
@@ -54,7 +54,7 @@ const Contact = () => (
             Contact Support
           </Button>
         </div>
-      </Fade>
+      </Reveal>
     </section>
     <Form />
   </div>

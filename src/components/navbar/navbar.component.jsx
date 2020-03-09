@@ -2,14 +2,14 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { ReactComponent as Logo } from "../../assets/magaya-logo.svg";
-import { Slide } from "react-reveal";
+import Reveal from "react-reveal";
 
 import Button from "../button/button.component";
 
 import "./navbar.styles.scss";
 
 const Navbar = () => (
-  <Slide top>
+  <Reveal effect="slideInDown">
     <div className="navbar">
       <div className="navbar__container">
         <Link to="/" aria-label="Brand Logo">
@@ -54,7 +54,7 @@ const Navbar = () => (
         </div>
       </div>
     </div>
-  </Slide>
+  </Reveal>
 );
 
 export default Navbar;

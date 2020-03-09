@@ -1,7 +1,7 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { ReactComponent as Ecosystem } from "../../assets/magaya-ecosystem.svg";
-import { Fade } from "react-reveal";
+import Reveal from "react-reveal";
 
 import Button from "../../components/button/button.component";
 import Card from "../../components/card/card.component";
@@ -13,7 +13,7 @@ import "./home.styles.scss";
 const Home = () => (
   <div className="home">
     <section className="home__hero">
-      <Fade>
+      <Reveal effect="fadeIn">
         <div className="hero__content">
           <h1>End-to-End Software for Logistics and Supply Chain Management</h1>
           <p>
@@ -35,34 +35,37 @@ const Home = () => (
         <div className="hero__image">
           <Ecosystem />
         </div>
-      </Fade>
+      </Reveal>
     </section>
     <hr className="home__line" />
     <section className="home__banner">
-      <h2 className="banner__heading">
-        Trusted by 1700+ leading Freight Forwarders, NVOCCs, 3PLs, and Couriers
-      </h2>
-      <div className="banner__images">
-        <img
-          src="/images/home/logo-wtdc.webp"
-          alt="WTDC Logo"
-          onClick={() => window.open("https://www.wtdc.com/")}
-        />
-        <img
-          src="/images/home/logo-interport.webp"
-          alt="Interport Logo"
-          onClick={() => window.open("https://www.interport.us/")}
-        />
-        <img
-          src="/images/home/logo-promptus.webp"
-          alt="Promptus Logo"
-          onClick={() => window.open("https://www.promptus.us/")}
-        />
-      </div>
+      <Reveal effect="fadeIn">
+        <h2 className="banner__heading">
+          Trusted by 1700+ leading Freight Forwarders, NVOCCs, 3PLs, and
+          Couriers
+        </h2>
+        <div className="banner__images">
+          <img
+            src="/images/home/logo-wtdc.webp"
+            alt="WTDC Logo"
+            onClick={() => window.open("https://www.wtdc.com/")}
+          />
+          <img
+            src="/images/home/logo-interport.webp"
+            alt="Interport Logo"
+            onClick={() => window.open("https://www.interport.us/")}
+          />
+          <img
+            src="/images/home/logo-promptus.webp"
+            alt="Promptus Logo"
+            onClick={() => window.open("https://www.promptus.us/")}
+          />
+        </div>
+      </Reveal>
     </section>
     <section className="home__stats">
       <div className="stats__container">
-        <Fade>
+        <Reveal effect="fadeIn">
           <h2>Magaya by the Numbers</h2>
           <div className="stats__tiles">
             <div className="stats__tile">
@@ -94,8 +97,8 @@ const Home = () => (
               </h4>
             </div>
           </div>
-        </Fade>
-        <Fade bottom>
+        </Reveal>
+        <Reveal effect="fadeIn">
           <div className="stats__cards">
             <Card
               image="/images/home/icon-product-warehouse.webp"
@@ -133,11 +136,11 @@ const Home = () => (
               </li>
             </Card>
           </div>
-        </Fade>
+        </Reveal>
       </div>
     </section>
     <section className="home__reviews">
-      <Fade>
+      <Reveal effect="fadeIn">
         <h1 className="reviews__heading">Why our customers love us...</h1>
         <hr className="reviews__line" />
         <div className="reviews__list">
@@ -163,7 +166,7 @@ const Home = () => (
             transport.”
           </Comment>
         </div>
-      </Fade>
+      </Reveal>
     </section>
     <Form />
   </div>

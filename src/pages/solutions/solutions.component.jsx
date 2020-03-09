@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import Reveal from "react-reveal";
 
 import Card from "../../components/card/card.component";
 import Quote from "../../components/quote/quote.component";
@@ -10,7 +10,7 @@ import "./solutions.styles.scss";
 const Solutions = () => (
   <div className="solutions">
     <section className="solutions__hero">
-      <Fade>
+      <Reveal effect="fadeIn">
         <h2 className="hero__title">
           Your Global Leader In Logistics And Supply Chain Automation
         </h2>
@@ -23,10 +23,10 @@ const Solutions = () => (
           the solution also boasts an advanced WMS with out of the box eCommerce
           connections to major online sales channels and couriers.
         </p>
-      </Fade>
+      </Reveal>
     </section>
     <section className="solutions__compare">
-      <Fade>
+      <Reveal effect="fadeIn">
         <table className="compare__table" cellSpacing="0">
           <thead>
             <tr>
@@ -78,20 +78,20 @@ const Solutions = () => (
             </tr>
           </tbody>
         </table>
-      </Fade>
+      </Reveal>
     </section>
     <section className="solutions__features">
       <div className="features__container">
-        <Fade>
+        <Reveal effect="fadeIn">
           <h3 className="features__heading">
             Our ecosystem of modern desktop, web, and mobile apps provides you
             with more features and functionality than any other product on the
             market. Magaya is here for you every step of the way, supporting
             your growth as your company scales.
           </h3>
-        </Fade>
+        </Reveal>
         <div className="features__cards">
-          <Fade bottom>
+          <Reveal effect="fadeIn">
             <Card
               image="/images/solutions/product-icn-livetrack.webp"
               title="Visibility & Tracking"
@@ -140,8 +140,8 @@ const Solutions = () => (
               </li>
               <li>No high upfront cost of traditional dimensioning tools</li>
             </Card>
-          </Fade>
-          <Fade bottom>
+          </Reveal>
+          <Reveal effect="fadeIn">
             <Card
               image="/images/solutions/product-icn-carrier-connections.webp"
               title="Carrier Connections"
@@ -187,8 +187,8 @@ const Solutions = () => (
                 ensuring faster and more accurate claims resolution.
               </li>
             </Card>
-          </Fade>
-          <Fade bottom>
+          </Reveal>
+          <Reveal effect="fadeIn">
             <Card
               image="/images/solutions/product-icn-logistico.webp"
               title="Customs and Compliance"
@@ -235,12 +235,12 @@ const Solutions = () => (
                 Pickup Request
               </li>
             </Card>
-          </Fade>
+          </Reveal>
         </div>
       </div>
     </section>
     <section className="solutions__quotes">
-      <Fade>
+      <Reveal effect="fadeIn">
         <Quote
           image="/images/solutions/img-quotes.webp"
           author="Patrick Oliva"
@@ -251,11 +251,9 @@ const Solutions = () => (
           online tracking, we can offer our customers one-stop shopping. They
           can see what’s been received, what’s in transit, what’s delivered.
         </Quote>
-      </Fade>
-      <Fade>
+      </Reveal>
+      <Reveal effect="fadeIn">
         <hr className="quotes__line" />
-      </Fade>
-      <Fade>
         <Quote
           image="/images/solutions/img-quotes.webp"
           author="Scott Beal"
@@ -267,7 +265,7 @@ const Solutions = () => (
           one-size-fits-all. We can expand it to meet needs as our business
           changes.”
         </Quote>
-      </Fade>
+      </Reveal>
     </section>
     <Form />
   </div>
