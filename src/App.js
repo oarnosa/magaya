@@ -20,6 +20,8 @@ const Home = lazy(() => import("./pages/home/home.component"));
 const Solutions = lazy(() => import("./pages/solutions/solutions.component"));
 const About = lazy(() => import("./pages/about/about.component"));
 const Contact = lazy(() => import("./pages/contact/contact.component"));
+const Terms = lazy(() => import("./pages/terms/terms.component"));
+const Privacy = lazy(() => import("./pages/privacy/privacy.component"));
 
 library.add(faComments, faPhoneAlt);
 
@@ -34,6 +36,8 @@ function App() {
             <Route path="/solutions" component={Solutions} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
+            <Route path="/terms" component={Terms} />
+            <Route path="/privacy" component={Privacy} />
             <Redirect to="/" />
           </Suspense>
         </Switch>

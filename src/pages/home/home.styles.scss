@@ -46,13 +46,13 @@
       grid-template-columns: repeat(3, 1fr);
       padding: 20px 0 75px 0;
       align-items: center;
-      opacity: 0.75;
 
       & > :first-child {
         cursor: pointer;
         height: 60px;
         width: 145px;
         justify-self: start;
+        opacity: 0.75;
       }
 
       & > :nth-child(2) {
@@ -60,6 +60,7 @@
         height: 110px;
         width: 181.5px;
         justify-self: center;
+        opacity: 0.75;
       }
 
       & > :last-child {
@@ -67,6 +68,7 @@
         height: 75px;
         width: 243px;
         justify-self: end;
+        opacity: 0.75;
       }
     }
   }
