@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./comment.styles.scss";
-
 const Comment = ({ name, company, children }) => (
   <div className="comment">
     <p>{children}</p>

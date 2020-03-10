@@ -4,30 +4,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1250px;
+  height: 125vh;
   width: 100%;
   background-size: cover;
   background-position: center top;
   background-image: url("/images/contact/magaya-texture-translucent.webp"),
     $background-gradient;
 
-  @media screen and (max-width: $breakpoint-desktop) {
-    height: 1050px;
-  }
-
   &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 950px;
-    width: 950px;
+    height: 85%;
+    width: 85%;
+    max-width: 1000px;
     background-color: $color-primary;
     border-radius: 10px;
     padding: 50px 50px;
 
     @media screen and (max-width: $breakpoint-desktop) {
-      height: 850px;
-      width: 800px;
+      width: 85%;
     }
   }
 
@@ -36,7 +32,7 @@
 
     .heading__title,
     .heading__subtitle {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
   }
 
@@ -53,13 +49,13 @@
     }
 
     label {
-      font-size: 14px;
+      font-size: 1.4rem;
       font-weight: 500;
       margin-top: 15px;
     }
 
     input {
-      height: 40px;
+      height: 2.5em;
       padding: 0 15px;
     }
   }

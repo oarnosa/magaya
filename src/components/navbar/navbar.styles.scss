@@ -5,7 +5,7 @@
   justify-content: center;
   position: sticky;
   top: 0;
-  height: 95px;
+  height: 10vh;
   width: 100%;
   padding: 25px 0;
   background-color: $color-primary;
@@ -15,10 +15,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: $responsive-width-desktop;
+    width: 60%;
 
     @media screen and (max-width: $breakpoint-desktop) {
-      width: $responsive-width-laptop;
+      width: 80%;
     }
   }
 
@@ -28,7 +28,7 @@
   }
 
   &__option {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
     margin-left: 40px;
     transition: ease-in-out 0.25s;

@@ -4,22 +4,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 10vh;
   width: 100%;
   background-color: $color-secondary;
 
   &__container {
     display: flex;
     justify-content: space-between;
-    width: $responsive-width-desktop;
+    width: 60%;
 
     @media screen and (max-width: $breakpoint-desktop) {
-      width: $responsive-width-laptop;
+      width: 80%;
     }
 
     p {
       color: $color-primary;
-      font-size: 14px;
+      font-size: 1.4rem;
       font-weight: 500;
       margin: 0;
     }
