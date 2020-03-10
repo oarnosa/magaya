@@ -7,8 +7,12 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 1100px;
     padding: 50px 0 75px;
+    width: $responsive-width-desktop;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+      width: $responsive-width-laptop;
+    }
 
     .hero__video__container {
       display: flex;
@@ -20,6 +24,11 @@
     .hero__video {
       height: 495px;
       width: 880px;
+
+      @media screen and (max-width: $breakpoint-desktop) {
+        height: 450px;
+        width: 800px;
+      }
     }
   }
 
@@ -37,7 +46,12 @@
       grid-template-columns: repeat(3, 1fr);
       column-gap: 55px;
       padding: 25px 0 50px;
-      width: 1150px;
+      width: $responsive-width-desktop;
+
+      @media screen and (max-width: $breakpoint-desktop) {
+        column-gap: 30px;
+        width: $responsive-width-laptop;
+      }
     }
 
     .founder__content {
@@ -49,6 +63,11 @@
         height: 225px;
         width: 225px;
         margin-bottom: 25px;
+
+        @media screen and (max-width: $breakpoint-desktop) {
+          height: 200px;
+          width: 200px;
+        }
       }
 
       h3 {

@@ -7,11 +7,16 @@
   height: 675px;
   width: 475px;
   padding: 30px;
+  margin: auto;
   color: $color-secondary;
   background-color: $color-primary;
   border-radius: 10px;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  @media screen and (max-width: $breakpoint-desktop) {
+    width: 400px;
+  }
 
   &__title {
     color: $color-tertiary;
@@ -52,6 +57,11 @@
   &--small {
     height: 625px;
     width: 350px;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+      height: 575px;
+      width: 375px;
+    }
 
     .card__title {
       color: $color-tertiary;

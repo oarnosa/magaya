@@ -20,7 +20,7 @@ const About = () => (
           countries, time zones and currencies.
         </p>
         <div className="hero__video__container">
-          <YouTube className="hero__video" videoId="LQ2SGPK8Mjw" />
+          <YouTube className="hero__video" videoId="0fTQyZBesMg" />
         </div>
       </Reveal>
     </section>

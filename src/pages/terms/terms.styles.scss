@@ -4,9 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1150px;
   padding: 25px 0;
   margin: auto;
+  width: $responsive-width-desktop;
+
+  @media screen and (max-width: $breakpoint-desktop) {
+    width: $responsive-width-laptop;
+  }
 
   h4 {
     text-align: center;

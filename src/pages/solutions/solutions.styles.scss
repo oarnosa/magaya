@@ -7,8 +7,12 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 1100px;
     padding: 75px 0 25px;
+    width: $responsive-width-desktop;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+      width: $responsive-width-laptop;
+    }
   }
 
   &__compare {
@@ -16,8 +20,12 @@
     justify-content: center;
 
     .compare__table {
-      width: 950px;
       padding-bottom: 75px;
+      width: 950px;
+
+      @media screen and (max-width: $breakpoint-desktop) {
+        width: 750px;
+      }
 
       tr > th {
         padding: 25px;
@@ -58,22 +66,6 @@
     }
   }
 
-  &__quotes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 900px;
-    width: 1150px;
-
-    .quotes__line {
-      width: 100%;
-      margin: 25px 0;
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    }
-  }
-
   &__features {
     display: flex;
     flex-direction: column;
@@ -87,7 +79,11 @@
       flex-direction: column;
       align-items: center;
       padding: 50px 0;
-      width: 1150px;
+      width: $responsive-width-desktop;
+
+      @media screen and (max-width: $breakpoint-desktop) {
+        width: $responsive-width-laptop;
+      }
     }
 
     .features__heading {
@@ -104,6 +100,36 @@
       justify-content: center;
       padding: 50px 0;
       width: 100%;
+
+      @media screen and (max-width: $breakpoint-desktop) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 25px;
+
+        :nth-child(9) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__quotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    width: $responsive-width-desktop;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+      width: $responsive-width-laptop;
+    }
+
+    .quotes__line {
+      width: 100%;
+      margin: 25px 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
   }
 }

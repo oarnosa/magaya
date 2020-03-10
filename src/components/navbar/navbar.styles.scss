@@ -15,7 +15,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1150px;
+    width: $responsive-width-desktop;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+      width: $responsive-width-laptop;
+    }
   }
 
   &__options {
@@ -36,13 +40,5 @@
 
   &__button {
     margin-left: 40px;
-  }
-}
-
-@media screen and (max-width: $breakpoint-desktop) {
-  .navbar {
-    &__container {
-      width: 850px;
-    }
   }
 }

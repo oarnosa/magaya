@@ -10,14 +10,22 @@
     justify-content: center;
     width: 950px;
     padding: 75px 0 25px;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+      width: 750px;
+    }
   }
 
   &__detail {
     display: flex;
-    width: 1100px;
     text-align: center;
     margin-top: 25px;
     margin: 25px 0 175px;
+    width: $responsive-width-desktop;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+      width: $responsive-width-laptop;
+    }
 
     .detail__line {
       margin: 0 75px;

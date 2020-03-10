@@ -7,25 +7,41 @@
     display: flex;
     justify-content: space-between;
     height: 550px;
-    width: 1150px;
+    width: $responsive-width-desktop;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+      width: $responsive-width-laptop;
+    }
 
     .hero__content {
       display: flex;
       flex-direction: column;
       justify-content: center;
       width: 45%;
+
+      @media screen and (max-width: $breakpoint-desktop) {
+        width: 42.5%;
+      }
     }
 
     .hero__image {
       width: 55%;
+
+      @media screen and (max-width: $breakpoint-desktop) {
+        width: 57.5%;
+      }
     }
   }
 
   &__line {
-    width: 1150px;
     margin: 25px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: $responsive-width-desktop;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+      width: $responsive-width-laptop;
+    }
   }
 
   &__banner {
@@ -33,7 +49,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 1150px;
+    width: $responsive-width-desktop;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+      width: $responsive-width-laptop;
+    }
 
     .banner__heading {
       font-size: 24px;
@@ -84,8 +104,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 1150px;
       padding: 50px 0;
+      width: $responsive-width-desktop;
+
+      @media screen and (max-width: $breakpoint-desktop) {
+        width: $responsive-width-laptop;
+      }
     }
 
     .stats__tiles {
@@ -93,6 +117,10 @@
       grid-template-columns: repeat(3, 1fr);
       column-gap: 55px;
       padding: 25px 0 50px;
+
+      @media screen and (max-width: $breakpoint-desktop) {
+        column-gap: 35px;
+      }
     }
 
     .stats__tile {
@@ -118,8 +146,12 @@
     justify-content: center;
     text-align: center;
     padding: 50px 0 25px 0;
-    width: 1150px;
     height: 900px;
+    width: $responsive-width-desktop;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+      width: $responsive-width-laptop;
+    }
 
     .reviews__line {
       border-top: 4px solid $color-tertiary;
@@ -128,47 +160,12 @@
     }
 
     .reviews__list {
-      display: flex;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       font-style: italic;
       column-gap: 50px;
-    }
-  }
-}
 
-@media screen and (max-width: $breakpoint-desktop) {
-  .home {
-    &__hero {
-      width: 850px;
-
-      .hero__content {
-        width: 42.5%;
-      }
-
-      .hero__image {
-        width: 57.5%;
-      }
-    }
-
-    &__banner {
-      width: 850px;
-    }
-
-    &__stats {
-      .stats__container {
-        width: 850px;
-      }
-
-      .stats__tiles {
-        column-gap: 35px;
-      }
-    }
-
-    &__reviews {
-      width: 850px;
-
-      .reviews__list {
+      @media screen and (max-width: $breakpoint-desktop) {
         column-gap: 30px;
       }
     }
