@@ -2,7 +2,9 @@
 
 .navbar {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   position: sticky;
   top: 0;
   height: 10vh;
@@ -23,11 +25,19 @@
       width: 80%;
       min-width: 675px;
     }
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      min-width: 325px;
+    }
   }
 
   &__options {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      display: none;
+    }
   }
 
   &__option {
@@ -43,5 +53,13 @@
 
   &__button {
     margin-left: 40px;
+  }
+
+  &__collapse {
+    display: none;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      display: flex;
+    }
   }
 }

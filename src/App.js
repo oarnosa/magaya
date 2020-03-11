@@ -7,7 +7,11 @@ import {
 } from "react-router-dom";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faComments, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faComments,
+  faPhoneAlt,
+  faBars
+} from "@fortawesome/free-solid-svg-icons";
 
 import ScrollToTop from "./components/scroll-to-top/scroll-to-top.wrapper";
 import Spinner from "./components/spinner/spinner.component";
@@ -23,7 +27,7 @@ const Contact = lazy(() => import("./pages/contact/contact.component"));
 const Terms = lazy(() => import("./pages/terms/terms.component"));
 const Privacy = lazy(() => import("./pages/privacy/privacy.component"));
 
-library.add(faComments, faPhoneAlt);
+library.add(faComments, faPhoneAlt, faBars);
 
 function App() {
   return (

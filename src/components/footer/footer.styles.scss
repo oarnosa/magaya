@@ -20,6 +20,12 @@
       min-width: 675px;
     }
 
+    @media screen and (max-width: $breakpoint-tablet) {
+      flex-direction: column;
+      text-align: center;
+      min-width: 325px;
+    }
+
     p {
       color: $color-primary;
       font-size: 1.4rem;
@@ -31,8 +37,15 @@
   &__legal {
     display: flex;
 
+    @media screen and (max-width: $breakpoint-tablet) {
+      justify-content: center;
+    }
+
     .legal__link {
       cursor: pointer;
+    }
+
+    .legal__link:last-child {
       margin-left: 25px;
     }
   }
