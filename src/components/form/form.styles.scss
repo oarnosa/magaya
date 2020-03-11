@@ -4,8 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 125vh;
+  height: 115vh;
+  min-height: fit-content;
   width: 100%;
+  padding: 50px 0;
   background-size: cover;
   background-position: center top;
   background-image: url("/images/contact/magaya-texture-translucent.webp"),
@@ -15,48 +17,45 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 85%;
-    width: 85%;
-    max-width: 1000px;
+    width: 80%;
+    max-width: 985px;
     background-color: $color-primary;
     border-radius: 10px;
-    padding: 50px 50px;
-
-    @media screen and (max-width: $breakpoint-desktop) {
-      width: 85%;
-    }
+    padding: 50px 0;
   }
 
   &__heading {
     text-align: center;
-
-    .heading__title,
-    .heading__subtitle {
-      margin-bottom: 10px;
-    }
   }
 
   &__fields {
-    height: 100%;
-    width: 65%;
     display: flex;
-    padding: 10px 0 50px 0;
     flex-direction: column;
     justify-content: space-evenly;
+    height: 100%;
+    width: 70%;
+    max-width: 575px;
+    padding: 10px 0 20px;
 
     @media screen and (max-width: $breakpoint-desktop) {
-      width: 75%;
+      width: 70%;
     }
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
 
     label {
       font-size: 1.4rem;
       font-weight: 500;
-      margin-top: 15px;
     }
 
     input {
       height: 2.5em;
       padding: 0 15px;
+      margin: 10px 0;
     }
   }
 }

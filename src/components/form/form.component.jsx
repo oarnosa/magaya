@@ -16,20 +16,34 @@ const Form = () => (
           </p>
         </div>
         <form className="form__fields">
-          <label htmlFor="first">First Name</label>
-          <input type="text" id="first" />
-          <label htmlFor="last">Last Name</label>
-          <input type="text" id="last" />
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" />
-          <label htmlFor="phone">Phone</label>
-          <input type="tel" id="phone" />
-          <label htmlFor="company">Company</label>
-          <input type="text" id="company" />
-          <label htmlFor="address">Company Address</label>
-          <input type="text" id="address" />
-          <label htmlFor="industry">Industry</label>
-          <input type="text" id="industry" />
+          <div className="form__input">
+            <label htmlFor="first">First Name</label>
+            <input type="text" id="first" />
+          </div>
+          <div className="form__input">
+            <label htmlFor="last">Last Name</label>
+            <input type="text" id="last" />
+          </div>
+          <div className="form__input">
+            <label htmlFor="email">Email</label>
+            <input type="email" id="email" />
+          </div>
+          <div className="form__input">
+            <label htmlFor="phone">Phone</label>
+            <input type="tel" id="phone" />
+          </div>
+          <div className="form__input">
+            <label htmlFor="company">Company</label>
+            <input type="text" id="company" />
+          </div>
+          <div className="form__input">
+            <label htmlFor="address">Company Address</label>
+            <input type="text" id="address" />
+          </div>
+          <div className="form__input">
+            <label htmlFor="industry">Industry</label>
+            <input type="text" id="industry" />
+          </div>
         </form>
         <div className="form__button">
           <Button large>Submit</Button>

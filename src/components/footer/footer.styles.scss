@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   height: 10vh;
+  min-height: 95px;
   width: 100%;
   background-color: $color-secondary;
 
@@ -12,9 +13,11 @@
     display: flex;
     justify-content: space-between;
     width: 60%;
+    min-width: 985px;
 
     @media screen and (max-width: $breakpoint-desktop) {
       width: 80%;
+      min-width: 675px;
     }
 
     p {

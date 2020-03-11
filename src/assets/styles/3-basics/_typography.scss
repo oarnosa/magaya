@@ -1,6 +1,14 @@
 // Typography for all elements
 :root {
   font-size: 62.5%; /* 10px root */
+
+  @media screen and (max-width: $breakpoint-desktop) {
+    font-size: 57.5%;
+  }
+
+  @media screen and (max-width: $breakpoint-laptop) {
+    font-size: 55%;
+  }
 }
 
 * {
