@@ -8,26 +8,22 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    padding: 50px 0 25px;
+    height: 35vh;
+    min-height: fit-content;
     width: 60%;
     min-width: 985px;
 
     @media screen and (max-width: $breakpoint-desktop) {
-      height: 35vh;
       width: 80%;
       min-width: 675px;
-    }
-
-    @media screen and (max-width: $breakpoint-laptop) {
-      height: 30vh;
     }
   }
 
   &__detail {
     display: flex;
     text-align: center;
-    height: 65vh;
-    padding: 50px 0;
+    padding-bottom: 50px;
+    height: 55vh;
     min-height: fit-content;
     width: 60%;
     min-width: 985px;
@@ -37,15 +33,11 @@
       min-width: 675px;
     }
 
-    @media screen and (max-width: $breakpoint-laptop) {
-      height: 60vh;
-    }
-
     .detail__line {
       margin: 0 50px;
       border-right: 0.5px solid rgba($color-secondary, $alpha: 0.25);
       border-left: 0.5px solid rgba($color-secondary, $alpha: 0.25);
-      height: 55%;
+      height: 72.5%;
     }
 
     .detail__icon {

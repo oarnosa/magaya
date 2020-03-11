@@ -33,9 +33,10 @@
   }
 
   &__line {
-    margin: 25px 0 50px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    height: 5vh;
+    min-height: fit-content;
     width: 60%;
     min-width: 985px;
 
@@ -50,8 +51,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 25px 0;
-    height: 35vh;
+    height: 30vh;
     min-height: fit-content;
     width: 60%;
     min-width: 985px;
@@ -101,7 +101,6 @@
   &__stats {
     display: flex;
     justify-content: center;
-    width: 100%;
     padding: 50px 0;
     color: $color-primary;
     background: $background-gradient-circles;
@@ -131,6 +130,7 @@
 
     .stats__tile {
       text-align: center;
+      padding-bottom: 50px;
 
       &__value {
         font-size: 4.2rem;
@@ -141,7 +141,6 @@
     .stats__cards {
       display: flex;
       justify-content: space-around;
-      padding: 50px 0 25px;
     }
   }
 
@@ -150,7 +149,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 100vh;
+    height: 90vh;
     min-height: fit-content;
     width: 60%;
     min-width: 985px;
