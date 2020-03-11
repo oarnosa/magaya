@@ -8,29 +8,44 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    width: 950px;
-    padding: 75px 0 25px;
+    padding: 50px 0 25px;
+    width: 60%;
+    min-width: 985px;
 
     @media screen and (max-width: $breakpoint-desktop) {
-      width: 750px;
+      height: 35vh;
+      width: 80%;
+      min-width: 675px;
+    }
+
+    @media screen and (max-width: $breakpoint-laptop) {
+      height: 30vh;
     }
   }
 
   &__detail {
     display: flex;
     text-align: center;
-    margin-top: 25px;
-    margin: 25px 0 175px;
-    width: $responsive-width-desktop;
+    height: 65vh;
+    padding: 50px 0;
+    min-height: fit-content;
+    width: 60%;
+    min-width: 985px;
 
     @media screen and (max-width: $breakpoint-desktop) {
-      width: $responsive-width-laptop;
+      width: 80%;
+      min-width: 675px;
+    }
+
+    @media screen and (max-width: $breakpoint-laptop) {
+      height: 60vh;
     }
 
     .detail__line {
-      margin: 0 75px;
+      margin: 0 50px;
       border-right: 0.5px solid rgba($color-secondary, $alpha: 0.25);
       border-left: 0.5px solid rgba($color-secondary, $alpha: 0.25);
+      height: 55%;
     }
 
     .detail__icon {

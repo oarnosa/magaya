@@ -29,15 +29,11 @@
 
     .hero__image {
       width: 55%;
-
-      @media screen and (max-width: $breakpoint-desktop) {
-        width: 57.5%;
-      }
     }
   }
 
   &__line {
-    margin: 25px 0;
+    margin: 25px 0 50px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     width: 60%;
@@ -55,7 +51,7 @@
     align-items: center;
     text-align: center;
     padding: 25px 0;
-    height: 30vh;
+    height: 35vh;
     min-height: fit-content;
     width: 60%;
     min-width: 985px;

@@ -26,6 +26,7 @@ const Home = () => (
               spy={true}
               smooth={true}
               duration={500}
+              offset={-45}
               aria-label="Request Demo"
             >
               <Button large>Request Demo</Button>

@@ -7,27 +7,38 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 50px 0 75px;
-    width: $responsive-width-desktop;
+    padding: 50px 0 25px;
+    height: 100vh;
+    min-height: fit-content;
+    width: 60%;
+    min-width: 985px;
 
     @media screen and (max-width: $breakpoint-desktop) {
-      width: $responsive-width-laptop;
+      width: 80%;
+      min-width: 675px;
     }
 
     .hero__video__container {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 25px 0 50px;
+      height: 65%;
+      min-height: fit-content;
+      padding-bottom: 25px;
     }
 
     .hero__video {
-      height: 495px;
-      width: 880px;
+      height: 450px;
+      width: 800px;
 
       @media screen and (max-width: $breakpoint-desktop) {
-        height: 450px;
-        width: 800px;
+        height: 405px;
+        width: 720px;
+      }
+
+      @media screen and (max-width: $breakpoint-laptop) {
+        height: 360px;
+        width: 640px;
       }
     }
   }
@@ -44,13 +55,15 @@
     .founders__tiles {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      column-gap: 55px;
+      column-gap: 50px;
       padding: 25px 0 50px;
-      width: $responsive-width-desktop;
+      width: 60%;
+      min-width: 985px;
 
       @media screen and (max-width: $breakpoint-desktop) {
         column-gap: 30px;
-        width: $responsive-width-laptop;
+        width: 80%;
+        min-width: 675px;
       }
     }
 
@@ -71,11 +84,12 @@
       }
 
       h3 {
+        text-align: center;
         margin-bottom: 35px;
       }
 
       p {
-        font-size: 14px;
+        font-size: 1.4rem;
         line-height: 2;
         margin-bottom: 18px;
       }

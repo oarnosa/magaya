@@ -46,6 +46,7 @@ const Navbar = () => (
               spy={true}
               smooth={true}
               duration={500}
+              offset={-45}
               aria-label="Request Demo"
             >
               <Button>Request Demo</Button>

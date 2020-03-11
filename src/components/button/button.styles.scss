@@ -4,14 +4,14 @@
   color: $color-primary;
   background-color: $color-tertiary;
   padding: 12px 18px;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.3;
   border-radius: 25px;
   transition: ease-in-out 0.25s;
 
   &--large {
-    font-size: 16px;
+    font-size: 1.6rem;
     padding: 18px 24px;
   }
 

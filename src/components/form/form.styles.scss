@@ -4,10 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 115vh;
+  height: 100vh;
   min-height: fit-content;
   width: 100%;
-  padding: 50px 0;
+  padding: 75px 0;
   background-size: cover;
   background-position: center top;
   background-image: url("/images/contact/magaya-texture-translucent.webp"),
@@ -21,7 +21,7 @@
     max-width: 985px;
     background-color: $color-primary;
     border-radius: 10px;
-    padding: 50px 0;
+    padding: 45px;
   }
 
   &__heading {
@@ -36,16 +36,12 @@
     width: 70%;
     max-width: 575px;
     padding: 10px 0 20px;
-
-    @media screen and (max-width: $breakpoint-desktop) {
-      width: 70%;
-    }
   }
 
   &__input {
     display: flex;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 
     label {
       font-size: 1.4rem;
