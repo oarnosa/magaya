@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { ReactComponent as Logo } from "../../assets/magaya-logo.svg";
 import Button from "../button/button.component";
+import Menu from "../menu/menu.component";
 
 import "./navbar.styles.scss";
 
@@ -71,6 +72,7 @@ const Navbar = () => {
             />
           </div>
         </div>
+        {open && <Menu />}
       </div>
     </Reveal>
   );

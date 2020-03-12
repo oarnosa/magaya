@@ -2,6 +2,7 @@ import React from "react";
 import YouTube from "react-youtube";
 import Reveal from "react-reveal";
 
+import Button from "../../components/button/button.component";
 import Form from "../../components/form/form.component";
 
 import "./about.styles.scss";
@@ -19,6 +20,18 @@ const About = () => (
           shipment volumes, rapid transaction traffic, and users in different
           countries, time zones and currencies.
         </p>
+        <div className="hero__video__button">
+          <Button
+            large
+            onClick={() =>
+              window.open(
+                "https://www.youtube.com/watch?v=0fTQyZBesMg&list=LLI4SQb8mFpGJm_Pv7bQs6Ng&index=5&t=0s&pbjreload=10"
+              )
+            }
+          >
+            Watch Video
+          </Button>
+        </div>
         <div className="hero__video__container">
           <YouTube className="hero__video" videoId="0fTQyZBesMg" />
         </div>

@@ -24,7 +24,7 @@ const Privacy = lazy(() => import("./pages/privacy/privacy.component"));
 
 library.add(faComments, faPhoneAlt, faBars);
 
-function App() {
+const App = () => {
   return (
     <Router>
       <ScrollToTop>
@@ -43,6 +43,6 @@ function App() {
       </ScrollToTop>
     </Router>
   );
-}
+};
 
 export default App;

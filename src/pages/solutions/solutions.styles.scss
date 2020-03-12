@@ -22,7 +22,7 @@
       justify-content: center;
       height: 90vh;
       width: 85%;
-      min-width: 325px;
+      min-width: 300px;
     }
   }
 
@@ -116,7 +116,8 @@
 
       @media screen and (max-width: $breakpoint-tablet) {
         width: 85%;
-        min-width: 325px;
+        min-width: 300px;
+        padding: 50px 0 25px;
       }
     }
 
@@ -181,7 +182,7 @@
 
       @media screen and (max-width: $breakpoint-tablet) {
         width: 85%;
-        min-width: 325px;
+        min-width: 300px;
       }
     }
 

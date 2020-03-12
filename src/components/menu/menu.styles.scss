@@ -1,7 +1,19 @@
 @import "../../assets/styles/main";
 
 .menu {
-  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 95px;
+  height: 50px;
   width: 100%;
+  color: white;
   background-color: $color-tertiary;
+  padding: 25px;
+  z-index: 5;
+
+  &__option {
+    font-weight: 500;
+  }
 }
