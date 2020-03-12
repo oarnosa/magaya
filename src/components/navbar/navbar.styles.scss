@@ -26,6 +26,7 @@
     }
 
     @media screen and (max-width: $breakpoint-tablet) {
+      height: 75px;
       width: 85%;
       min-width: 300px;
     }

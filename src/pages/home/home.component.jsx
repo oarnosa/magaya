@@ -47,17 +47,17 @@ const Home = () => (
         </h2>
         <div className="banner__images">
           <img
-            src="/images/home/logo-wtdc.webp"
+            src="/images/home/logo-wtdc.jpg"
             alt="WTDC Logo"
             onClick={() => window.open("https://www.wtdc.com/")}
           />
           <img
-            src="/images/home/logo-interport.webp"
+            src="/images/home/logo-interport.jpg"
             alt="Interport Logo"
             onClick={() => window.open("https://www.interport.us/")}
           />
           <img
-            src="/images/home/logo-promptus.webp"
+            src="/images/home/logo-promptus.jpg"
             alt="Promptus Logo"
             onClick={() => window.open("https://www.promptus.us/")}
           />
@@ -102,7 +102,7 @@ const Home = () => (
         <Reveal effect="fadeIn">
           <div className="stats__cards">
             <Card
-              image="/images/home/icon-product-warehouse.webp"
+              image="/images/home/icon-product-warehouse.png"
               title="Supply Chain Solution"
               subtitle="Freight forwarding combined with WMS and eCommerce, designed for 3PLs with Freight and Warehousing"
               link="/solutions"
@@ -121,7 +121,7 @@ const Home = () => (
               </li>
             </Card>
             <Card
-              image="/images/home/icon-product-box.webp"
+              image="/images/home/icon-product-box.png"
               title="Cargo System"
               subtitle="Freight forwarding combined with essential warehousing capabilities, designed for Freight Forwarders, NVOCCs, Couriers"
               link="/solutions"

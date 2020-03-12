@@ -6,8 +6,8 @@ import Button from "../button/button.component";
 import "./form.styles.scss";
 
 const Form = () => (
-  <Reveal effect="fadeIn">
-    <div className="form" id="form">
+  <div className="form" id="form">
+    <Reveal effect="fadeIn">
       <div className="form__container">
         <div className="form__heading">
           <h2 className="heading__title">Request Demo</h2>
@@ -49,8 +49,8 @@ const Form = () => (
           <Button large>Submit</Button>
         </div>
       </div>
-    </div>
-  </Reveal>
+    </Reveal>
+  </div>
 );
 
 export default Form;

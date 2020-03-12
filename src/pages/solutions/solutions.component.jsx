@@ -93,7 +93,7 @@ const Solutions = () => (
         <div className="features__cards">
           <Reveal effect="fadeIn">
             <Card
-              image="/images/solutions/product-icn-livetrack.webp"
+              image="/images/solutions/product-icn-livetrack.png"
               title="Visibility & Tracking"
               subtitle="LiveTrack web and mobile app for customer service, visibility and tracking"
               small
@@ -111,7 +111,7 @@ const Solutions = () => (
               </li>
             </Card>
             <Card
-              image="/images/solutions/product-icn-binder.webp"
+              image="/images/solutions/product-icn-binder.png"
               title="Photos of Everything"
               subtitle="Binder is a simple way to send pictures to your Magaya system, in seconds"
               small
@@ -126,7 +126,7 @@ const Solutions = () => (
               <li>Real-time visibility to the customer via LiveTrack</li>
             </Card>
             <Card
-              image="/images/solutions/product-icn-dimensioner.webp"
+              image="/images/solutions/product-icn-dimensioner.png"
               title="Warehouse Automation"
               subtitle="Dimensioner automates a slow, manual, error-prone warehouse process"
               small
@@ -143,7 +143,7 @@ const Solutions = () => (
           </Reveal>
           <Reveal effect="fadeIn">
             <Card
-              image="/images/solutions/product-icn-carrier-connections.webp"
+              image="/images/solutions/product-icn-carrier-connections.png"
               title="Carrier Connections"
               subtitle="Carrier Connections for Air, Ocean, and Couriers"
               small
@@ -156,7 +156,7 @@ const Solutions = () => (
               </li>
             </Card>
             <Card
-              image="/images/solutions/product-icn-vin-lookup.webp"
+              image="/images/solutions/product-icn-vin-lookup.png"
               title="eCommerce Fulfillment"
               subtitle="Logistico upgrades Magaya to an end-to-end eCommerce management platform"
               small
@@ -172,7 +172,7 @@ const Solutions = () => (
               </li>
             </Card>
             <Card
-              image="/images/solutions/product-icn-cargo-insurance.webp"
+              image="/images/solutions/product-icn-cargo-insurance.png"
               title="Cargo Insurance"
               subtitle="Magaya Insurance Services are integrated with our shipping features"
               small
@@ -190,7 +190,7 @@ const Solutions = () => (
           </Reveal>
           <Reveal effect="fadeIn">
             <Card
-              image="/images/solutions/product-icn-logistico.webp"
+              image="/images/solutions/product-icn-logistico.png"
               title="Customs and Compliance"
               subtitle="Customs connections directly out of Magaya"
               small
@@ -204,7 +204,7 @@ const Solutions = () => (
               <li>International: Canada, Mexico, Panama etc</li>
             </Card>
             <Card
-              image="/images/solutions/product-icn-final-mile.webp"
+              image="/images/solutions/product-icn-final-mile.png"
               title="Delivery App"
               subtitle="Final Mile gives drivers an efficient way to pick up and deliver packages and collect signatures"
               small
@@ -218,7 +218,7 @@ const Solutions = () => (
               </li>
             </Card>
             <Card
-              image="/images/solutions/product-icn-vin-lookup.webp"
+              image="/images/solutions/product-icn-vin-lookup.png"
               title="Vehicle Lookup"
               subtitle="A VIN Database for vehicle shippers to avoid mistakes and increase efficiency"
               small
@@ -243,7 +243,7 @@ const Solutions = () => (
       <div className="quotes__container">
         <Reveal effect="fadeIn">
           <Quote
-            image="/images/solutions/img-quotes.webp"
+            image="/images/solutions/img-quotes.png"
             author="Patrick Oliva"
             company="Owner, Simple Freight Solutions"
           >
@@ -256,7 +256,7 @@ const Solutions = () => (
         <Reveal effect="fadeIn">
           <hr className="quotes__line" />
           <Quote
-            image="/images/solutions/img-quotes.webp"
+            image="/images/solutions/img-quotes.png"
             author="Scott Beal"
             company="Chief Operating Officer, M2 Transport"
             flip
