@@ -9,6 +9,10 @@
   @media screen and (max-width: $breakpoint-laptop) {
     font-size: 52.5%;
   }
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    font-size: 50%;
+  }
 }
 
 * {

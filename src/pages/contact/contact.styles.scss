@@ -17,6 +17,13 @@
       width: 80%;
       min-width: 675px;
     }
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      justify-content: flex-end;
+      height: 42.5vh;
+      width: 85%;
+      min-width: 325px;
+    }
   }
 
   &__detail {
@@ -33,11 +40,22 @@
       min-width: 675px;
     }
 
+    @media screen and (max-width: $breakpoint-tablet) {
+      flex-direction: column;
+      height: 90vh;
+      width: 85%;
+      min-width: 325px;
+    }
+
     .detail__line {
       margin: 0 50px;
       border-right: 0.5px solid rgba($color-secondary, $alpha: 0.25);
       border-left: 0.5px solid rgba($color-secondary, $alpha: 0.25);
       height: 72.5%;
+
+      @media screen and (max-width: $breakpoint-tablet) {
+        display: none;
+      }
     }
 
     .detail__icon {

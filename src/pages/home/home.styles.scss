@@ -16,6 +16,12 @@
       min-width: 675px;
     }
 
+    @media screen and (max-width: $breakpoint-tablet) {
+      height: 65vh;
+      width: 85%;
+      min-width: 325px;
+    }
+
     .hero__content {
       display: flex;
       flex-direction: column;
@@ -25,10 +31,22 @@
       @media screen and (max-width: $breakpoint-desktop) {
         width: 42.5%;
       }
+
+      @media screen and (max-width: $breakpoint-tablet) {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        max-width: 425px;
+        margin: auto;
+      }
     }
 
     .hero__image {
       width: 55%;
+
+      @media screen and (max-width: $breakpoint-tablet) {
+        display: none;
+      }
     }
   }
 
@@ -43,6 +61,11 @@
     @media screen and (max-width: $breakpoint-desktop) {
       width: 80%;
       min-width: 675px;
+    }
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      width: 85%;
+      min-width: 325px;
     }
   }
 
@@ -61,6 +84,11 @@
       min-width: 675px;
     }
 
+    @media screen and (max-width: $breakpoint-tablet) {
+      width: 85%;
+      min-width: 325px;
+    }
+
     .banner__heading {
       font-size: 2.4rem;
       margin-bottom: 25px;
@@ -72,12 +100,22 @@
       align-items: center;
       width: 100%;
 
+      @media screen and (max-width: $breakpoint-tablet) {
+        padding-bottom: 25px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 125px);
+      }
+
       & > :first-child {
         cursor: pointer;
         height: 60px;
         width: 145px;
         justify-self: start;
         opacity: 0.75;
+
+        @media screen and (max-width: $breakpoint-tablet) {
+          justify-self: center;
+        }
       }
 
       & > :nth-child(2) {
@@ -94,6 +132,10 @@
         width: 243px;
         justify-self: end;
         opacity: 0.75;
+
+        @media screen and (max-width: $breakpoint-tablet) {
+          justify-self: center;
+        }
       }
     }
   }
@@ -116,21 +158,38 @@
         width: 80%;
         min-width: 675px;
       }
+
+      @media screen and (max-width: $breakpoint-tablet) {
+        width: 85%;
+        min-width: 325px;
+      }
     }
 
     .stats__tiles {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      column-gap: 50px;
+      gap: 50px;
 
       @media screen and (max-width: $breakpoint-desktop) {
-        column-gap: 30px;
+        gap: 30px;
+      }
+
+      @media screen and (max-width: $breakpoint-tablet) {
+        justify-content: center;
+        padding-bottom: 25px;
+        grid-template-columns: repeat(1, 0.85fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0;
       }
     }
 
     .stats__tile {
       text-align: center;
       padding-bottom: 50px;
+
+      @media screen and (max-width: $breakpoint-tablet) {
+        padding: 0 0 25px;
+      }
 
       &__value {
         font-size: 4.2rem;
@@ -141,39 +200,71 @@
     .stats__cards {
       display: flex;
       justify-content: space-around;
+
+      @media screen and (max-width: $breakpoint-tablet) {
+        flex-direction: column;
+        justify-content: center;
+      }
     }
   }
 
   &__reviews {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    padding: 50px 0;
     height: 90vh;
     min-height: fit-content;
-    width: 60%;
-    min-width: 985px;
-    padding: 50px 0;
 
-    @media screen and (max-width: $breakpoint-desktop) {
-      width: 80%;
-      min-width: 675px;
+    @media screen and (max-width: $breakpoint-tablet) {
+      background-color: rgba(240, 240, 240, 1);
+    }
+
+    .reviews__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 60%;
+      min-width: 985px;
+
+      @media screen and (max-width: $breakpoint-desktop) {
+        width: 80%;
+        min-width: 675px;
+      }
+
+      @media screen and (max-width: $breakpoint-tablet) {
+        width: 85%;
+        min-width: 325px;
+      }
     }
 
     .reviews__line {
       border-top: 4px solid $color-tertiary;
-      margin: 0 auto 75px auto;
+      margin: 0 auto 75px;
       width: 10%;
+
+      @media screen and (max-width: $breakpoint-tablet) {
+        margin: 0 auto 45px;
+        width: 25%;
+      }
     }
 
     .reviews__list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       font-style: italic;
-      column-gap: 50px;
+      gap: 50px;
 
       @media screen and (max-width: $breakpoint-desktop) {
-        column-gap: 30px;
+        gap: 30px;
+      }
+
+      @media screen and (max-width: $breakpoint-tablet) {
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0;
       }
     }
   }

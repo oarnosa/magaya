@@ -18,6 +18,13 @@
       min-width: 675px;
     }
 
+    @media screen and (max-width: $breakpoint-tablet) {
+      justify-content: center;
+      height: 90vh;
+      width: 85%;
+      min-width: 325px;
+    }
+
     .hero__video__container {
       display: flex;
       justify-content: center;
@@ -25,6 +32,10 @@
       height: 65%;
       min-height: fit-content;
       padding-bottom: 25px;
+
+      @media screen and (max-width: $breakpoint-tablet) {
+        display: none;
+      }
     }
 
     .hero__video {
@@ -50,7 +61,7 @@
     align-items: center;
     padding: 50px 0 25px;
     width: 100%;
-    background-color: rgba(235, 235, 235, 1);
+    background-color: rgba(240, 240, 240, 1);
 
     .founders__tiles {
       display: grid;
@@ -64,6 +75,15 @@
         column-gap: 30px;
         width: 80%;
         min-width: 675px;
+      }
+
+      @media screen and (max-width: $breakpoint-tablet) {
+        width: 85%;
+        min-width: 325px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 25px;
+        padding: 50px 0 0;
       }
     }
 

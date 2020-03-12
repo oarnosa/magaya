@@ -6,6 +6,7 @@
   align-items: center;
   min-height: 675px;
   width: 45%;
+  margin: auto;
   padding: 35px;
   color: $color-secondary;
   background-color: $color-primary;
@@ -13,10 +14,11 @@
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 
-  // @media screen and (max-width: $breakpoint-desktop) {
-  //   min-height: 450px;
-  //   // width: 25%;
-  // }
+  @media screen and (max-width: $breakpoint-tablet) {
+    width: 95%;
+    align-self: center;
+    margin-bottom: 50px;
+  }
 
   &__title {
     text-align: center;
@@ -54,6 +56,11 @@
     height: 100%;
     min-height: 550px;
     width: 100%;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      min-height: 475px;
+      width: 85%;
+    }
 
     .card__title {
       font-size: 1.8rem;

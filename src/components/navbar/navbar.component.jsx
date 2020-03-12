@@ -20,9 +20,11 @@ const Navbar = () => {
     <Reveal effect="slideInDown">
       <div className="navbar">
         <div className="navbar__container">
-          <Link to="/" aria-label="Brand Logo">
-            <Logo />
-          </Link>
+          <div className="navbar__logo">
+            <Link to="/" aria-label="Brand Logo">
+              <Logo />
+            </Link>
+          </div>
           <div className="navbar__options">
             <NavLink
               to="/solutions"

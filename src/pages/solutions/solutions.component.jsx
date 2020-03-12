@@ -240,32 +240,34 @@ const Solutions = () => (
       </div>
     </section>
     <section className="solutions__quotes">
-      <Reveal effect="fadeIn">
-        <Quote
-          image="/images/solutions/img-quotes.webp"
-          author="Patrick Oliva"
-          company="Owner, Simple Freight Solutions"
-        >
-          We can give our customers visibility and inventory control and show
-          them the documents they need to see for their business. With the
-          online tracking, we can offer our customers one-stop shopping. They
-          can see what’s been received, what’s in transit, what’s delivered.
-        </Quote>
-      </Reveal>
-      <Reveal effect="fadeIn">
-        <hr className="quotes__line" />
-        <Quote
-          image="/images/solutions/img-quotes.webp"
-          author="Scott Beal"
-          company="Chief Operating Officer, M2 Transport"
-          flip
-        >
-          “It’s very adaptable and intuitive. A major selling point for us was
-          the high level of customization that is available. It’s not a
-          one-size-fits-all. We can expand it to meet needs as our business
-          changes.”
-        </Quote>
-      </Reveal>
+      <div className="quotes__container">
+        <Reveal effect="fadeIn">
+          <Quote
+            image="/images/solutions/img-quotes.webp"
+            author="Patrick Oliva"
+            company="Owner, Simple Freight Solutions"
+          >
+            We can give our customers visibility and inventory control and show
+            them the documents they need to see for their business. With the
+            online tracking, we can offer our customers one-stop shopping. They
+            can see what’s been received, what’s in transit, what’s delivered.
+          </Quote>
+        </Reveal>
+        <Reveal effect="fadeIn">
+          <hr className="quotes__line" />
+          <Quote
+            image="/images/solutions/img-quotes.webp"
+            author="Scott Beal"
+            company="Chief Operating Officer, M2 Transport"
+            flip
+          >
+            “It’s very adaptable and intuitive. A major selling point for us was
+            the high level of customization that is available. It’s not a
+            one-size-fits-all. We can expand it to meet needs as our business
+            changes.”
+          </Quote>
+        </Reveal>
+      </div>
     </section>
     <Form />
   </div>
