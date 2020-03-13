@@ -47,17 +47,17 @@ const Home = () => (
         </h2>
         <div className="banner__images">
           <img
-            src="/images/home/logo-wtdc.jpg"
+            src="/images/home/logo-wtdc.png"
             alt="WTDC Logo"
             onClick={() => window.open("https://www.wtdc.com/")}
           />
           <img
-            src="/images/home/logo-interport.jpg"
+            src="/images/home/logo-interport.png"
             alt="Interport Logo"
             onClick={() => window.open("https://www.interport.us/")}
           />
           <img
-            src="/images/home/logo-promptus.jpg"
+            src="/images/home/logo-promptus.png"
             alt="Promptus Logo"
             onClick={() => window.open("https://www.promptus.us/")}
           />
