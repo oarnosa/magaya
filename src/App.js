@@ -31,12 +31,12 @@ const App = () => {
         <Navbar />
         <Switch>
           <Suspense fallback={<Spinner />}>
-            <Route exact path="/" component={Home} />
             <Route path="/solutions" component={Solutions} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route path="/terms" component={Terms} />
             <Route path="/privacy" component={Privacy} />
+            <Route component={Home} />
           </Suspense>
         </Switch>
         <Footer />
