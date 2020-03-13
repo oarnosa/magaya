@@ -2,10 +2,6 @@
   <img alt="Logo" src="./src/assets/magaya-logo.svg" width="225" />
 </div>
 
-<h1 align="center">
-  Magaya Website Redesign
-</h1>
-
 <h4 align="center">
  Website redesign for <a href="https://www.magaya.com" target="_blank">Magaya</a>, an end-to-end software for logistics and supply chain management. Built with <a href="https://www.reactjs.org/" target="_blank">React</a> and hosted on <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </h4>
