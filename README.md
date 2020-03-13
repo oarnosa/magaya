@@ -1,68 +1,88 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img alt="Logo" src="./src/assets/magaya-logo.svg" width="225" />
+</div>
 
-## Available Scripts
+<h1 align="center">
+  Magaya Website Redesign
+</h1>
 
-In the project directory, you can run:
+<h4 align="center">
+ Website redesign for <a href="https://www.magaya.com" target="_blank">Magaya</a>, an end-to-end software for logistics and supply chain management. Built with <a href="https://www.reactjs.org/" target="_blank">React</a> and hosted on <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+</h4>
 
-### `yarn start`
+<p align="center">
+  <a href="https://app.netlify.com/sites/orlandoarnosa/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/760ae1b4-f05c-4f70-b51c-3a6859cff4a1/deploy-status" alt="Netlify Status" />
+  </a>
+</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center">
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#color-reference">Color Reference</a> •
+  <a href="#license">License</a>
+</p>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+![demo](./public/images/magaya-thumbnail.jpg)
 
-### `yarn test`
+## How To Use
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
-### `yarn build`
+```bash
+# Clone this repository
+$ git clone https://github.com/oarnosa/magaya.git
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Go into the repository
+$ cd magaya
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Install dependencies
+$ npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Run the app
+$ npm start
+```
 
-### `yarn eject`
+## Color Reference
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<table style="width:100%">
+  <tr>
+    <th>Color</th>
+    <th>RGB</th>
+    <th>HEX</th>
+  </tr>
+  <tr align=center>
+    <td>White</td>
+    <td>rgb(250, 250, 250)</td>
+    <td>#FAFAFA</td>
+  </tr>
+  <tr align=center>
+    <td>Dark Gray</td>
+    <td>rgb(60, 60, 60)</td>
+    <td>#3C3C3C</td>
+  </tr>
+  <tr align=center>
+    <td>Light Gray</td>
+    <td>rgb(240, 240, 240)</td>
+    <td>#F0F0F0</td>
+  </tr>
+  <tr align=center>
+    <td>Dark Blue</td>
+    <td>rgb(34, 2, 159)</td>
+    <td>#22029F</td>
+  </tr>
+  <tr align=center>
+    <td>Blue</td>
+    <td>rgb(10, 95, 200)</td>
+    <td>#0A5FC8</td>
+  </tr>
+  <tr align=center>
+    <td>Light Blue</td>
+    <td>rgb(28, 117, 250)</td>
+    <td>#1C75FA</td>
+  </tr>
+</table>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- While the code is free to use and distribute as it was built by myself, <a href="http://orlandoarnosa.com" target="_blank">Orlando Arnosa</a>, all images, videos, logos, and assets are owned by <a href="http://www.magaya.com" target="_blank">Magaya Corporation</a>.
