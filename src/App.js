@@ -1,5 +1,10 @@
 import React, { lazy, Suspense } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect
+} from "react-router-dom";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -31,12 +36,13 @@ const App = () => {
         <Navbar />
         <Switch>
           <Suspense fallback={<Spinner />}>
+            <Route path="/" exact component={Home} />
             <Route path="/solutions" component={Solutions} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route path="/terms" component={Terms} />
             <Route path="/privacy" component={Privacy} />
-            <Route component={Home} />
+            <Redirect to="/" />
           </Suspense>
         </Switch>
         <Footer />
