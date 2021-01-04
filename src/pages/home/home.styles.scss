@@ -5,8 +5,8 @@
 
   &__hero {
     display: flex;
+    padding: 75px 0;
     justify-content: space-between;
-    height: 55vh;
     min-height: fit-content;
     width: 60%;
     min-width: 985px;
@@ -17,7 +17,7 @@
     }
 
     @media screen and (max-width: $breakpoint-tablet) {
-      height: 65vh;
+      // height: 65vh;
       width: 85%;
       min-width: 300px;
     }
@@ -71,10 +71,10 @@
 
   &__banner {
     display: flex;
+    padding-bottom: 75px;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 30vh;
     min-height: fit-content;
     width: 60%;
     min-width: 985px;
@@ -213,7 +213,6 @@
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-    height: 90vh;
     min-height: fit-content;
 
     @media screen and (max-width: $breakpoint-tablet) {
