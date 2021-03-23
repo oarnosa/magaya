@@ -8,8 +8,7 @@
     flex-direction: column;
     text-align: center;
     padding: 50px 0 25px;
-    height: 95vh;
-    min-height: fit-content;
+    min-height: 90vh;
     width: 60%;
     min-width: 985px;
 
@@ -20,7 +19,6 @@
 
     @media screen and (max-width: $breakpoint-tablet) {
       justify-content: center;
-      height: 80vh;
       width: 85%;
       min-width: 300px;
       padding: 0 0 25px;
@@ -38,9 +36,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 65%;
-      min-height: fit-content;
-      padding-bottom: 25px;
+      padding: 50px 0;
 
       @media screen and (max-width: $breakpoint-tablet) {
         display: none;

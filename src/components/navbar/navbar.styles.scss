@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 25px 0;
-    height: 95px;
+    height: 10vh;
     width: 60%;
     min-width: 985px;
 
@@ -26,7 +26,6 @@
     }
 
     @media screen and (max-width: $breakpoint-tablet) {
-      height: 75px;
       width: 85%;
       min-width: 300px;
     }

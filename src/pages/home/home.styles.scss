@@ -6,8 +6,7 @@
   &__hero {
     display: flex;
     justify-content: space-between;
-    height: 55vh;
-    min-height: fit-content;
+    min-height: 55vh;
     width: 60%;
     min-width: 985px;
 
@@ -17,7 +16,6 @@
     }
 
     @media screen and (max-width: $breakpoint-tablet) {
-      height: 65vh;
       width: 85%;
       min-width: 300px;
     }
@@ -53,8 +51,7 @@
   &__line {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    height: 5vh;
-    min-height: fit-content;
+    min-height: 5vh;
     width: 60%;
     min-width: 985px;
 
@@ -74,8 +71,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 30vh;
-    min-height: fit-content;
+    min-height: 30vh;
     width: 60%;
     min-width: 985px;
 
@@ -213,7 +209,7 @@
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-    height: 90vh;
+    min-height: 90vh;
     min-height: fit-content;
 
     @media screen and (max-width: $breakpoint-tablet) {
