@@ -13,10 +13,6 @@ import "./navbar.styles.scss";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setOpen(!open);
-  };
-
   return (
     <Reveal effect="slideInDown">
       <div className="navbar">
@@ -68,11 +64,11 @@ const Navbar = () => {
             <FontAwesomeIcon
               icon={["fas", "bars"]}
               size="2x"
-              onClick={toggleMenu}
+              onClick={() => setOpen(true)}
             />
           </div>
         </div>
-        {open && <Menu />}
+        {open && <Menu setOpen={setOpen} />}
       </div>
     </Reveal>
   );
