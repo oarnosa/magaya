@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "../../assets/styles/main";
 
 .contact {
@@ -67,3 +68,70 @@
     }
   }
 }
+=======
+@import "../../assets/styles/main";
+
+.contact {
+  @include page;
+
+  &__hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    min-height: 40vh;
+    width: 60%;
+    min-width: 985px;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+      width: 80%;
+      min-width: 675px;
+    }
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      justify-content: flex-end;
+      width: 85%;
+      min-width: 300px;
+    }
+  }
+
+  &__detail {
+    display: flex;
+    text-align: center;
+    padding-bottom: 50px;
+    min-height: 50vh;
+    width: 60%;
+    min-width: 985px;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+      width: 80%;
+      min-width: 675px;
+    }
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      flex-direction: column;
+      width: 85%;
+      min-width: 300px;
+    }
+
+    .detail__line {
+      margin: 0 50px;
+      border-right: 0.5px solid rgba($color-secondary, $alpha: 0.25);
+      border-left: 0.5px solid rgba($color-secondary, $alpha: 0.25);
+      height: 72.5%;
+
+      @media screen and (max-width: $breakpoint-tablet) {
+        display: none;
+      }
+    }
+
+    .detail__icon {
+      margin: 50px;
+    }
+
+    .detail__sales > h4 {
+      color: $color-tertiary;
+    }
+  }
+}
+>>>>>>> develop

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "../../assets/styles/main";
 
 .navbar {
@@ -71,3 +72,77 @@
     }
   }
 }
+=======
+@import "../../assets/styles/main";
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: $color-primary;
+  z-index: 10;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    height: 10vh;
+    width: 60%;
+    min-width: 985px;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+      width: 80%;
+      min-width: 675px;
+    }
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      width: 85%;
+      min-width: 300px;
+    }
+  }
+
+  &__logo {
+    height: 100%;
+    width: 40%;
+    min-width: 100px;
+    max-width: 175px;
+  }
+
+  &__options {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      display: none;
+    }
+  }
+
+  &__option {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: ease-in-out 0.25s;
+
+    &:hover {
+      color: $color-tertiary;
+    }
+  }
+
+  &__button {
+    margin-left: 40px;
+  }
+
+  &__collapse {
+    display: none;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      display: flex;
+    }
+  }
+}
+>>>>>>> develop

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "../../assets/styles/main";
 
 .footer {
@@ -51,3 +52,58 @@
     }
   }
 }
+=======
+@import "../../assets/styles/main";
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  width: 100%;
+  background-color: $color-secondary;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 60%;
+    min-width: 985px;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+      width: 80%;
+      min-width: 675px;
+    }
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      flex-direction: column;
+      text-align: center;
+      width: 85%;
+      min-width: 300px;
+    }
+
+    p {
+      color: $color-primary;
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+
+  &__legal {
+    display: flex;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      justify-content: center;
+    }
+
+    .legal__link {
+      cursor: pointer;
+    }
+
+    .legal__link:last-child {
+      margin-left: 25px;
+    }
+  }
+}
+>>>>>>> develop
