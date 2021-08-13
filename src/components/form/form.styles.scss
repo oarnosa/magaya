@@ -10,7 +10,7 @@
   padding: 75px 0;
   background-size: cover;
   background-position: center top;
-  background-image: url("/images/contact/magaya-texture-translucent.png"),
+  background-image: url("../../assets/elements/magaya-texture-translucent.png"),
     $background-gradient;
 
   @media screen and (max-width: $breakpoint-tablet) {
